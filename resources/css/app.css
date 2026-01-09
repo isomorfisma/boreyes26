@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Helvetica Now Display */
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/fonts/helvetica/HelveticaNowDisplay-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/fonts/helvetica/HelveticaNowDisplay-Bold.woff2') format('woff2');
+    font-weight: 800; /* BUKAN 700 */
+}
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/fonts/helvetica/HelveticaNowDisplay-Black.woff2') format('woff2');
+    font-weight: 900; /* BLACK */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Marola */
+@font-face {
+    font-family: 'Marola';
+    src: url('/fonts/marola/Marola-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Garet */
+@font-face {
+    font-family: 'Garet';
+    src: url('/fonts/garet/Garet-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
