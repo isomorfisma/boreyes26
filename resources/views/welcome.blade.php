@@ -21,6 +21,7 @@
         <div class="label">Default Tailwind (sans)</div>
         <p class="text-3xl">
             The quick brown fox jumps over the lazy dog
+            dog dog
         </p>
     </section>
 
