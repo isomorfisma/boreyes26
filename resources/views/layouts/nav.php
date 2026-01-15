@@ -374,15 +374,14 @@
                         <a href="/faq" class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->routeIs('faq') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                             FAQ
                         </a>
-                    
+
                         @auth
-                        <!-- {{ Auth::user()->name }} -->
-                            <!-- @php
+                            @php
                                 // Use the new team system (hasOne relationship)
                                 $userTeam = auth()->user()->team; // This uses the hasOne relationship
                                 $displayName = $userTeam ? $userTeam->name : auth()->user()->name;
                                 $displayInitial = $userTeam ? substr($userTeam->name, 0, 1) : substr(auth()->user()->name, 0, 1);
-                            @endphp -->
+                            @endphp
                             <div x-data="{ dropdownOpen: false }" class="relative ml-3">
                                 <button @click="dropdownOpen = !dropdownOpen" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition min-h-[44px]">
                                     <div class="w-8 h-8 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-full flex items-center justify-center shadow-md">
@@ -404,7 +403,7 @@
                                      x-transition:leave-start="opacity-100 transform scale-100"
                                      x-transition:leave-end="opacity-0 transform scale-95"
                                      class="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-2xl py-2 border-2 border-[#D3EB9F]/30">
-                                     @if(auth()->user()->role === 'admin')
+                                    @if(auth()->user()->isAdmin())
                                         <a href="" class="block px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition">
                                             <div class="flex items-center space-x-3">
                                                 <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -439,10 +438,10 @@
                                 </div>
                             </div>
                         @else
-                            <a href="{{ route('login') }}" class="px-4 py-2 text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 rounded-lg transition font-semibold font-garet min-h-[44px] flex items-center">
+                            <a href="" class="px-4 py-2 text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 rounded-lg transition font-semibold font-garet min-h-[44px] flex items-center">
                                 Login
                             </a>
-                            <a href="{{ route('register') }}" class="px-6 py-2.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm rounded-2xl hover:shadow-lg transition shadow-md font-black font-helvetica min-h-[44px] flex items-center">
+                            <a href="" class="px-6 py-2.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm rounded-2xl hover:shadow-lg transition shadow-md font-black font-helvetica min-h-[44px] flex items-center">
                                 Register
                             </a>
                         @endauth
@@ -682,15 +681,17 @@
                     
                     @auth
                         <hr class="my-3 border-[#D3EB9F]/30">
-                         @if(auth()->user()->role === 'admin')
-                            <a href="/admin/dashboard" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
+                        @if(auth()->user()->isAdmin())
+                            <a href="" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
                                 Admin Dashboard
                             </a>
                         @else
-                            <a href="/dashboard" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
+                            <a href="" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
                                 Dashboard
                             </a>
-                            
+                            <a href="" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
+                                My Teams
+                            </a>
                         @endif
                         <form method="POST" action="">
                             @csrf
@@ -700,10 +701,10 @@
                         </form>
                     @else
                         <hr class="my-3 border-[#D3EB9F]/30">
-                        <a href="{{ route('login') }}" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
+                        <a href="" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
                             Login
                         </a>
-                        <a href="{{ route('register') }}" class="block px-4 py-3 rounded-xl bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm text-center font-black font-helvetica hover:shadow-lg transition">
+                        <a href="" class="block px-4 py-3 rounded-xl bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm text-center font-black font-helvetica hover:shadow-lg transition">
                             Register
                         </a>
                     @endauth

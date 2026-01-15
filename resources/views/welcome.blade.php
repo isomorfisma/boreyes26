@@ -15,46 +15,53 @@
         Helvetica Now Display
     </p>
     
-    
 
     <section>
         <div class="label">Default Tailwind (sans)</div>
         <p class="text-3xl">
             The quick brown fox jumps over the lazy dog
-            dog dog
         </p>
     </section>
 
-    <!-- HELVETICA REGULAR -->
-    <section>
-        <div class="label">Helvetica Now Display - Regular</div>
-        <p class="font-helvetica text-3xl font-normal">
-            The quick brown fox jumps over the lazy dog
-        </p>
-    </section>
+        <!-- HELVETICA REGULAR -->
+        <section>
+            <div class="text-sm text-gray-500 mb-2">
+                Helvetica Now Display - Regular
+            </div>
+            <p class="font-helvetica text-3xl font-normal">
+                The quick brown fox jumps over the lazy dog
+            </p>
+        </section>
 
-    <!-- HELVETICA BOLD -->
-    <section>
-        <div class="label">Helvetica Now Display - Bold</div>
-        <p class="font-helvetica text-3xl font-bold">
-            The quick brown fox jumps over the lazy dog
-        </p>
-    </section>
+        <!-- HELVETICA BOLD -->
+        <section>
+            <div class="text-sm text-gray-500 mb-2">
+                Helvetica Now Display - Bold
+            </div>
+            <p class="font-helvetica text-3xl font-bold">
+                The quick brown fox jumps over the lazy dog
+            </p>
+        </section>
 
-    <!-- MAROLA -->
-    <section>
-        <div class="label">Marola</div>
-        <p class="font-marola text-3xl">
-            The quick brown fox jumps over the lazy dog
-        </p>
-    </section>
+        <!-- MAROLA -->
+        <section>
+            <div class="text-sm text-gray-500 mb-2">
+                Marola
+            </div>
+            <p class="font-marola text-3xl">
+                The quick brown fox jumps over the lazy dog
+            </p>
+        </section>
 
-    <!-- GARET -->
-    <section>
-        <div class="label">Garet</div>
-        <p class="font-garet text-3xl">
-            The quick brown fox jumps over the lazy dog
-        </p>
-    </section>
-</body>
-</html>
+        <!-- GARET -->
+        <section>
+            <div class="text-sm text-gray-500 mb-2">
+                Garet
+            </div>
+            <p class="font-garet text-3xl">
+                The quick brown fox jumps over the lazy dog
+            </p>
+        </section>
+
+    </div>
+@endsection
