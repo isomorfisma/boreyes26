@@ -91,42 +91,45 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- FAQ Accordion -->
         <div class="space-y-4" x-data="{ activeIndex: null }">
-            <!-- FAQ Item 1 -->
-              @foreach($faqs as $faq)
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 border border-[#0F4C82]/10 hover:border-[#D3EB9F]/60"
-                 :class="{ 'ring-2 ring-[#D3EB9F] border-[#D3EB9F]': activeIndex === 0 }">
-                <button @click="activeIndex = activeIndex === 0 ? null : 0"
-                        class="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-[#F8FBFC]/50 transition group">
-                    <span class="font-black text-[#0F4C82] pr-8 font-helvetica group-hover:text-[#6F97B6] transition text-base sm:text-lg">
-                        {{ $faq->question }}
-                    </span>
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                         :class="activeIndex === 0 ? 'bg-gradient-to-br from-[#C5E6C9] to-[#D3EB9F]' : 'bg-[#F8FBFC]'">
-                        <svg class="w-5 h-5 transform transition-transform duration-300"
-                             :class="[activeIndex === 0 ? 'rotate-180 text-[#0F4C82]' : 'text-[#6F97B6]']"
-                             fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                </button>
-                
-                <div x-show="activeIndex === 0"
-                     x-cloak
-                     x-transition:enter="transition ease-out duration-300"
-                     x-transition:enter-start="opacity-0 max-h-0"
-                     x-transition:enter-end="opacity-100 max-h-[500px]"
-                     x-transition:leave="transition ease-in duration-200"
-                     x-transition:leave-start="opacity-100 max-h-[500px]"
-                     x-transition:leave-end="opacity-0 max-h-0"
-                     class="overflow-hidden">
-                    <div class="px-6 pb-6">
-                        <div class="pt-2 border-t border-[#0F4C82]/10">
-                            <p class="text-[#374151] leading-relaxed font-garet pt-4">{{ $faq->answer }}</p>
-                        </div>
+    @foreach($faqs as $faq)
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 border border-[#0F4C82]/10 hover:border-[#D3EB9F]/60"
+             :class="{ 'ring-2 ring-[#D3EB9F] border-[#D3EB9F]': activeIndex === {{ $loop->index }} }">
+
+            <button @click="activeIndex = activeIndex === {{ $loop->index }} ? null : {{ $loop->index }}"
+                    class="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-[#F8FBFC]/50 transition group">
+                <span class="font-black text-[#0F4C82] pr-8 font-helvetica group-hover:text-[#6F97B6] transition text-base sm:text-lg">
+                    {{ $faq->question }}
+                </span>
+
+                <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
+                     :class="activeIndex === {{ $loop->index }} ? 'bg-gradient-to-br from-[#C5E6C9] to-[#D3EB9F]' : 'bg-[#F8FBFC]'">
+                    <svg class="w-5 h-5 transform transition-transform duration-300"
+                         :class="activeIndex === {{ $loop->index }} ? 'rotate-180 text-[#0F4C82]' : 'text-[#6F97B6]'"
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </button>
+
+            <div x-show="activeIndex === {{ $loop->index }}"
+                 x-cloak
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 max-h-0"
+                 x-transition:enter-end="opacity-100 max-h-[500px]"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100 max-h-[500px]"
+                 x-transition:leave-end="opacity-0 max-h-0"
+                 class="overflow-hidden">
+                <div class="px-6 pb-6">
+                    <div class="pt-2 border-t border-[#0F4C82]/10">
+                        <p class="text-[#374151] leading-relaxed font-garet pt-4">{{ $faq->answer }}</p>
                     </div>
                 </div>
             </div>
-            @endforeach
+
+        </div>
+    @endforeach
+</div>
 
 
         <!-- Contact Section -->

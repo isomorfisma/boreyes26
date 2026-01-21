@@ -4,6 +4,40 @@
     <div class="absolute top-20 right-20 w-96 h-96 bg-[#D3EB9F]/10 rounded-full blur-3xl animate-pulse-slow"></div>
     <div class="absolute bottom-20 left-20 w-80 h-80 bg-[#6F97B6]/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
     
+    <!-- Multiple Sparkles -->
+    <div class="sparkle-float absolute top-20 right-20 w-12 sm:w-16 h-12 sm:h-16 opacity-80 animate-float">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="sparkle-float absolute top-40 right-1/4 w-10 sm:w-12 h-10 sm:h-12 opacity-70 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="sparkle-float absolute top-32 left-20 w-11 sm:w-14 h-11 sm:h-14 opacity-75 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="sparkle-float absolute top-1/3 left-1/4 w-8 sm:w-10 h-8 sm:h-10 opacity-60 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="sparkle-float absolute bottom-40 right-32 w-14 sm:w-20 h-14 sm:h-20 opacity-85 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_10px_rgba(111,151,182,0.9)]">
+    </div>
+    <div class="sparkle-float absolute bottom-1/3 left-1/3 w-7 sm:w-8 h-7 sm:h-8 opacity-65 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_6px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="sparkle-float absolute top-1/2 right-1/3 w-9 sm:w-11 h-9 sm:h-11 opacity-70 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="sparkle-float absolute bottom-32 left-40 w-10 sm:w-13 h-10 sm:h-13 opacity-75 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="sparkle-float absolute top-1/2 right-1/2 w-9 sm:w-11 h-9 sm:h-11 opacity-70 animate-float" >
+        <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="sparkle-float absolute bottom-32 left-60 w-10 sm:w-13 h-10 sm:h-13 opacity-75 animate-float">
+        <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    
+    
+
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 z-10">
        <!-- Breadcrumb -->
         <div class="mb-8 sm:mb-10 lg:mb-12">
@@ -96,13 +130,15 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-3 justify-center animate-fade-in-up animation-delay-400">
+                @guest
                 @if($competition['status'] === 'OPEN')
+                
                     <a href="{{ $competition['register_url'] }}" 
                        class="group inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl shadow-2xl hover:shadow-[0_25px_60px_rgba(211,235,159,0.6)] transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 text-sm min-h-[50px] border-2 border-[#0F4C82]/30">
                         <svg class="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                         </svg>
-                        <span>Daftar Sekarang</span>
+                        <span>Register Now</span>
                     </a>
                 @else
                     <button disabled
@@ -113,6 +149,7 @@
                         <span>Pendaftaran Ditutup</span>
                     </button>
                 @endif
+                @endguest
                 
                 <!-- Registration Booklet Button -->
                 @if(!empty($competition['booklet_url']))
@@ -194,9 +231,24 @@
 
 @push('styles')
 <style>
-@keyframes pulse-slow {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.05); }
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-25px); }
+}
+
+@keyframes float-delayed {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-35px); }
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+}
+
+@keyframes sway-reverse {
+    0%, 100% { transform: scaleX(-1) rotate(0deg); }
+    50% { transform: scaleX(-1) rotate(-3deg); }
 }
 
 @keyframes fade-in-up {
@@ -210,8 +262,22 @@
     }
 }
 
-.animate-pulse-slow {
-    animation: pulse-slow 4s ease-in-out infinite;
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float-delayed 8s ease-in-out infinite;
+}
+
+.animate-sway {
+    animation: sway 10s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+.animate-sway-reverse {
+    animation: sway-reverse 12s ease-in-out infinite;
+    transform-origin: top center;
 }
 
 .animate-fade-in-up {
@@ -220,10 +286,6 @@
 
 .animation-delay-200 {
     animation-delay: 200ms;
-}
-
-.animation-delay-400 {
-    animation-delay: 400ms;
 }
 </style>
 @endpush

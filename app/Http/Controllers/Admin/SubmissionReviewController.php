@@ -39,4 +39,17 @@ class SubmissionReviewController extends Controller
 
         return back()->with('success', 'Peserta tidak diloloskan');
     }
+
+    public function pending(User $user)
+    {
+        Selection::updateOrCreate(
+            ['user_id' => $user->id],
+            ['status' => 'pending']
+        );
+
+        return back()->with('success', 'Status diubah menjadi pending');
+    }
+
+    
+    
 }

@@ -2,8 +2,8 @@
 
 @php
   $competition = [
-    'title' => 'Capture The Flag Competition',
-    'description' => 'Kompetisi cybersecurity terbesar untuk mahasiswa Indonesia. Uji kemampuan penetration testing, reverse engineering, dan keamanan sistem kamu!',
+    'title' => 'Plan of Development',
+    'description' => 'Kompetisi perencanaan pengembangan produk/program dari ide hingga roadmap eksekusi. Susun strategi, milestone, dan rencana implementasi yang realistis dan berdampak!',
     'status' => 'OPEN', // OPEN | CLOSED | COMING SOON
     'batch1_label' => 'Early Bird',
     'batch1' => '1 Jan - 28 Feb 2025',
@@ -11,29 +11,29 @@
     'batch2' => '1 Mar - 15 Mar 2025',
     'fee' => 'Rp 150.000',
     'register_url' => route('register'),
-    'booklet_url' => 'https://drive.google.com/your-ctf-booklet-link',
+    'booklet_url' => 'https://drive.google.com/your-plan-of-development-booklet-link',
   ];
 
   $others = [
     [
-      'title' => 'Hackathon Challenge', 
-      'desc' => 'Kompetisi membangun produk teknologi inovatif dalam waktu 48 jam', 
-      'url' => route('competitions.hackathon')
+      'title' => 'Business Case Competition',
+      'desc' => 'Kompetisi penyelesaian kasus bisnis dengan strategi dan pitching yang meyakinkan',
+      'url' => route('competitions.business-Case-Competition')
     ],
     [
-      'title' => 'UI/UX Design Competition', 
-      'desc' => 'Desain pengalaman pengguna terbaik untuk aplikasi digital masa depan', 
-      'url' => route('competitions.uiux')
+      'title' => 'Smart Competition',
+      'desc' => 'Kompetisi inovasi solusi cerdas berbasis teknologi untuk menjawab masalah nyata',
+      'url' => route('competitions.smart-Competition')
     ],
     [
-      'title' => 'Data Science Challenge', 
-      'desc' => 'Analisis data dan machine learning untuk menyelesaikan masalah bisnis nyata', 
-      'url' => route('competitions.data')
+      'title' => 'Paper & Poster Competition',
+      'desc' => 'Kompetisi paper dan poster untuk menyajikan riset dan ide secara jelas serta menarik',
+      'url' => route('competitions.paper-And-Poster-Competition')
     ],
     [
-      'title' => 'Essay Writing Competition', 
-      'desc' => 'Tulis essay kreatif bertema teknologi dan dampaknya untuk masyarakat', 
-      'url' => route('competitions.essay')
+      'title' => 'Case Study Competition',
+      'desc' => 'Kompetisi analisis studi kasus untuk melatih problem-solving dan rekomendasi strategis',
+      'url' => route('competitions.case-Study')
     ],
   ];
 @endphp

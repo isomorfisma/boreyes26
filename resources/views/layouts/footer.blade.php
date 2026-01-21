@@ -61,8 +61,8 @@
                         </button>
                         </li>
 
-                            <li><a href="" class="text-sm text-white/90 hover:text-[#D3EB9F] transition flex items-center space-x-2 font-garet group"><span class="w-5 h-5 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-[#D3EB9F]/20 transition"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span><span>Event Programs</span></a></li>
-                            <li><a href="" class="text-sm text-white/90 hover:text-[#D3EB9F] transition flex items-center space-x-2 font-garet group"><span class="w-5 h-5 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-[#D3EB9F]/20 transition"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span><span>FAQ</span></a></li>
+                            <li><a href="/eventPrograms" class="text-sm text-white/90 hover:text-[#D3EB9F] transition flex items-center space-x-2 font-garet group"><span class="w-5 h-5 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-[#D3EB9F]/20 transition"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span><span>Event Programs</span></a></li>
+                            <li><a href="/faq" class="text-sm text-white/90 hover:text-[#D3EB9F] transition flex items-center space-x-2 font-garet group"><span class="w-5 h-5 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-[#D3EB9F]/20 transition"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span><span>FAQ</span></a></li>
                         </ul>
                     </div>
 

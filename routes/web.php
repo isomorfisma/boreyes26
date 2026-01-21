@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\SubmissionReviewController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,18 +40,18 @@ route::get('/login', function () {
 // Competition Routes
 Route::prefix('competitions')->name('competitions.')->group(function () {
     Route::view('/smart-Competition', 'competitions.smart-Competition')->name('smart-Competition');
-    Route::view('/paper-And-Poster-Competition', 'competitions.paper-And-Poster-Competition')->name('paper-And-Poster-Competition');
+    Route::view('/paper-And-Poster-Competition', 'competitions.Paper-And-Poster-Competition')->name('paper-And-Poster-Competition');
     Route::view('/business-Case-Competition', 'competitions.business-Case-Competition')->name('business-Case-Competition');
     Route::view('/case-Study', 'competitions.case-Study')->name('case-Study');
     Route::view('/plan-Of-Development', 'competitions.plan-Of-Development')->name('plan-Of-Development');
 });
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -85,6 +86,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::patch('/admin/registrations/{user}/reject', [UserVerificationController::class, 'reject'])
         ->name('admin.registrations.reject');
 
+Route::get('/admin/registrations/{user}/detail', [UserVerificationController::class, 'getTeamDetail'])->name('admin.registrations.detail');
+
     Route::get('/admin/submissions', [SubmissionReviewController::class, 'index'])
         ->name('admin.submissions');
 
@@ -93,7 +96,13 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
     Route::post('/admin/submissions/{user}/fail', [SubmissionReviewController::class, 'fail'])
         ->name('admin.submissions.fail');
+
+    Route::post('/admin/submissions/{user}/pending', [SubmissionReviewController::class, 'pending'])
+        ->name('admin.submissions.pending');
+  
+
 });
+
 
 
 require __DIR__.'/auth.php';

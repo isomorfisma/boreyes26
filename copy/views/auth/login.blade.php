@@ -2,8 +2,6 @@
 
 @section('title', 'Login')
 
-
-
 @section('content')
 <div class="min-h-[calc(100vh-144px)] flex items-center justify-center px-4 py-12">
     <div class="w-full max-w-md">
@@ -186,3 +184,4 @@
     </div>
 </div>
 @endsection
+

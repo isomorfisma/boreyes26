@@ -26,7 +26,7 @@
                         <!-- Home with Dropdown -->
                         <div class="relative" @mouseenter="homeDropdown = true" @mouseleave="homeDropdown = false">
                             <a href="/" 
-                               class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->routeIs('home') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30 text-[#0F4C82]' : '' }}">
+                               class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->is('/') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30 text-[#0F4C82]' : '' }}">
                                 Home
                                 <svg class="w-4 h-4 ml-1 transition-transform duration-200" :class="homeDropdown ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -142,7 +142,7 @@
         
                        <!-- Competitions with Dropdown (NOT CLICKABLE) -->
                         <!-- <div class="relative" @mouseenter="competitionsDropdown = true" @mouseleave="competitionsDropdown = false" x-data="{ competitionsDropdown: false }"> -->
-                            <button class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->routeIs('competitions.*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                            <button class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->is('competitions*', 'smart-*', 'paper-*', 'business-*', 'case-*', 'plan-*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                                 Competitions
                                 <svg class="w-4 h-4 ml-1 transition-transform duration-200" :class="competitionsDropdown ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -183,7 +183,7 @@
                                         </div>
                                     </a>
                                     
-                                    <a href="" 
+                                    <a href="/competitions/paper-And-Poster-Competition" 
                                      x-show="showItems"
                                         x-transition:enter="transition ease-out duration-300 delay-[120ms]"
                                         x-transition:enter-start="opacity-0 translate-y-2"
@@ -198,7 +198,7 @@
                                         </div>
                                     </a>
                                     
-                                    <a href="" 
+                                    <a href="/competitions/business-Case-Competition" 
                                       x-show="showItems"
                                         x-transition:enter="transition ease-out duration-300 delay-[180ms]"
                                         x-transition:enter-start="opacity-0 translate-y-2"
@@ -213,7 +213,7 @@
                                         </div>
                                     </a>
                                     
-                                    <a href="" 
+                                    <a href="/competitions/case-Study" 
                                       x-show="showItems"
                                         x-transition:enter="transition ease-out duration-300 delay-[240ms]"
                                         x-transition:enter-start="opacity-0 translate-y-2"
@@ -228,7 +228,7 @@
                                         </div>
                                     </a>
                                     
-                                    <a href="" 
+                                    <a href="/competitions/plan-Of-Development" 
                                       x-show="showItems"
                                         x-transition:enter="transition ease-out duration-300 delay-[320ms]"
                                         x-transition:enter-start="opacity-0 translate-y-2"
@@ -251,7 +251,7 @@
                         <!-- Event Program with Dropdown -->
                         <div class="relative" @mouseenter="eventDropdown = true" @mouseleave="eventDropdown = false" x-data="{ eventDropdown: false }">
                             <a href="/eventPrograms" 
-                            class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->routeIs('event-programs') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                            class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->is('eventPrograms*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                                 Event Programs
                                 <svg class="w-4 h-4 ml-1 transition-transform duration-200" :class="eventDropdown ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -371,24 +371,20 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="/faq" class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->routeIs('faq') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                        <a href="/faq" class="px-4 py-2 rounded-lg text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->is('faq*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                             FAQ
                         </a>
                     
                         @auth
-                        <!-- {{ Auth::user()->name }} -->
-                            <!-- @php
-                                // Use the new team system (hasOne relationship)
-                                $userTeam = auth()->user()->team; // This uses the hasOne relationship
-                                $displayName = $userTeam ? $userTeam->name : auth()->user()->name;
-                                $displayInitial = $userTeam ? substr($userTeam->name, 0, 1) : substr(auth()->user()->name, 0, 1);
-                            @endphp -->
                             <div x-data="{ dropdownOpen: false }" class="relative ml-3">
-                                <button @click="dropdownOpen = !dropdownOpen" class="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition min-h-[44px]">
+                                <button @click="dropdownOpen = !dropdownOpen" 
+                                    class="flex items-center space-x-2 px-3 py-2 rounded-lg transition min-h-[44px]
+                                    hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20
+                                    {{ request()->is('dashboard*', 'admin/dashboard*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                                     <div class="w-8 h-8 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-full flex items-center justify-center shadow-md">
-                                        <span class="text-white text-xs font-black font-helvetica">{{ $displayInitial }}</span>
+                                        <span class="text-white text-xs font-black font-helvetica">U</span>
                                     </div>
-                                    <span class="text-sm text-[#0F4C82] font-semibold font-garet">{{ $displayName }}</span>
+                                    <span class="text-sm text-[#0F4C82] font-semibold font-garet">{{ auth()->user()->team_name }}</span>
                                     <svg class="w-4 h-4 text-[#6B7280]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -405,7 +401,7 @@
                                      x-transition:leave-end="opacity-0 transform scale-95"
                                      class="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-2xl py-2 border-2 border-[#D3EB9F]/30">
                                      @if(auth()->user()->role === 'admin')
-                                        <a href="" class="block px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition">
+                                        <a href="/admin/dashboard" class="block px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition">
                                             <div class="flex items-center space-x-3">
                                                 <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
@@ -414,7 +410,7 @@
                                             </div>
                                         </a>
                                     @else
-                                        <a href="" class="block px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition">
+                                        <a href="/dashboard" class="block px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition">
                                             <div class="flex items-center space-x-3">
                                                 <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
@@ -425,7 +421,7 @@
                                         
                                     @endif
                                     <hr class="my-2 border-[#D3EB9F]/30">
-                                    <form method="POST" action="">
+                                    <form method="POST" action="{{ route('logout') }}">
                                         @csrf
                                         <button type="submit" class="block w-full text-left px-4 py-3 text-[#DC2626] hover:bg-red-50 transition">
                                             <div class="flex items-center space-x-3">
@@ -479,7 +475,7 @@
                             else { showItems=false } 
                         })">
                         <button @click="mobileHomeOpen = !mobileHomeOpen" 
-                                class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica {{ request()->routeIs('home') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                                class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica {{ request()->is('/') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                             <span>Home</span>
                             <svg class="w-4 h-4 transition-transform duration-200" :class="mobileHomeOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -548,7 +544,7 @@
                         })">
                         <button data-nav="competitions-mobile"
                             @click="mobileCompOpen = !mobileCompOpen"
-                            class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica {{ request()->routeIs('competitions.*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                            class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica {{ request()->is('competitions*', 'smart-*', 'paper-*', 'business-*', 'case-*', 'plan-*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                             <span>Competitions</span>
                             <svg class="w-4 h-4 transition-transform duration-200" :class="mobileCompOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -556,19 +552,19 @@
                         </button>
                         
                         <div x-show="mobileCompOpen" x-cloak class="mt-2 ml-4 space-y-1 border-l-2 border-[#D3EB9F] pl-4">
-                            <a href="/smart-Competition" @click="open = false"   x-show="showItems"
+                            <a href="/competitions/smart-Competition" @click="open = false"   x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[60ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
                                 x-transition:enter-end="opacity-100 translate-y-0"
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                Smart Competition</a>
-                            <a href="/paper-And-Poster-Competition" @click="open = false"   x-show="showItems"
+                            <a href="/competitions/paper-And-Poster-Competition" @click="open = false"   x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[120ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
                                 x-transition:enter-end="opacity-100 translate-y-0"
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                Paper & Poster</a>
-                            <a href="/business-Case-Competition" @click="open = false"   x-show="showItems"
+                            <a href="/competitions/business-Case-Competition" @click="open = false"   x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[180ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
                                 x-transition:enter-end="opacity-100 translate-y-0"
@@ -580,7 +576,7 @@
                                 x-transition:enter-end="opacity-100 translate-y-0"
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                Case Study</a>
-                            <a href="/plan-Of-Development-Competition" @click="open = false"   x-show="showItems"
+                            <a href="/competitions/plan-Of-Development-Competition" @click="open = false"   x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[320ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
                                 x-transition:enter-end="opacity-100 translate-y-0"
@@ -596,7 +592,7 @@
                             else { showItems=false } 
                         })">
                         <button @click="mobileEventOpen = !mobileEventOpen"
-                                class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica {{ request()->routeIs('event-programs') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                                class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica {{ request()->is('eventPrograms*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                             <span>Event Programs</span>
                             <svg class="w-4 h-4 transition-transform duration-200" :class="mobileEventOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -604,7 +600,7 @@
                         </button>
 
                         <div x-show="mobileEventOpen" x-cloak class="mt-2 ml-4 space-y-1 border-l-2 border-[#D3EB9F] pl-4">
-                            <a href="#company-talks" @click="open = false"
+                            <a href="/eventPrograms#company-talks" @click="open = false"
                              x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[60ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -614,7 +610,7 @@
                                 Company Talks
                             </a>
 
-                            <a href="#csr" @click="open = false"
+                            <a href="/eventPrograms#csr" @click="open = false"
                              x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[120ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -624,7 +620,7 @@
                                 CSR
                             </a>
 
-                            <a href="#field-trip" @click="open = false"
+                            <a href="/eventPrograms#field-trip" @click="open = false"
                               x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[180ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -634,7 +630,7 @@
                                 Field Trip
                             </a>
 
-                            <a href="#final-competition" @click="open = false"
+                            <a href="/eventPrograms#final-competition" @click="open = false"
                               x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[240ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -644,7 +640,7 @@
                                 Final Competition
                             </a>
 
-                            <a href="#ignite-talks" @click="open = false"
+                            <a href="/eventPrograms#ignite-talks" @click="open = false"
                              x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[320ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -654,7 +650,7 @@
                                 Ignite Talks
                             </a>
 
-                            <a href="#funday" @click="open = false"
+                            <a href="/eventPrograms#funday" @click="open = false"
                               x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[380ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -664,7 +660,7 @@
                                 Funday
                             </a>
 
-                            <a href="#banquet" @click="open = false"
+                            <a href="/eventPrograms#banquet" @click="open = false"
                               x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[440ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -676,7 +672,7 @@
                         </div>
                     </div>
 
-                    <a href="/faq" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica min-h-[44px] {{ request()->routeIs('faq') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                    <a href="/faq" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica min-h-[44px] {{ request()->is('faq*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                         FAQ
                     </a>
                     
@@ -692,7 +688,7 @@
                             </a>
                             
                         @endif
-                        <form method="POST" action="">
+                        <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="block w-full text-left px-4 py-3 rounded-xl text-sm text-[#DC2626] hover:bg-red-50 font-bold font-helvetica">
                                 Logout
