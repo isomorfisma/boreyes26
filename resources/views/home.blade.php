@@ -63,7 +63,7 @@
     <div class="w-32 h-1.5 bg-gradient-to-r from-white via-[#D3EB9F] to-white rounded-full shadow-lg"></div>
 
     <p class="text-xl sm:text-2xl md:text-3xl font-semibold text-[#D3EB9F] font-marola drop-shadow-md">
-      #EventTaglines
+      #EventTaglinesss
     </p>
 
     <p
