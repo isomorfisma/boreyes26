@@ -122,7 +122,7 @@
         <!-- Navigation -->
         @include('layouts.navigation')
                 
-        <main>
+        <main class="pt-[64px]">
             @yield('content')
         </main>
 

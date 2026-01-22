@@ -437,10 +437,10 @@
                                 </div>
                             </div>
                         @else
-                            <a href="{{ route('login') }}" class="px-4 py-2 text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 rounded-lg transition font-semibold font-garet min-h-[44px] flex items-center">
+                            <a href="{{ route('login') }}" class="px-4 py-2 text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 rounded-lg transition font-semibold font-garet min-h-[44px] flex items-center {{ request()->is('login*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                                 Login
                             </a>
-                            <a href="{{ route('register') }}" class="px-6 py-2.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm rounded-2xl hover:shadow-lg transition shadow-md font-black font-helvetica min-h-[44px] flex items-center">
+                            <a href="{{ route('register') }}" class="px-6 py-2.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm rounded-2xl hover:shadow-lg transition shadow-md font-black font-helvetica min-h-[44px] flex items-center {{ request()->is('register*') ? 'ring-2 ring-offset-2 ring-[#C5E6C9]/50' : '' }}">
                                 Register
                             </a>
                         @endauth
@@ -698,15 +698,16 @@
                                 Logout
                             </button>
                         </form>
-                    @else
-                        <hr class="my-3 border-[#D3EB9F]/30">
-                        <a href="{{ route('login') }}" class="block px-4 py-3 rounded-xl text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 font-bold font-helvetica">
-                            Login
-                        </a>
-                        <a href="{{ route('register') }}" class="block px-4 py-3 rounded-xl bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm text-center font-black font-helvetica hover:shadow-lg transition">
-                            Register
-                        </a>
-                    @endauth
+                   @else
+                    <a href="{{ route('login') }}" 
+                    class="px-4 py-2 text-sm text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 rounded-lg transition font-bold font-helvetica min-h-[44px] flex items-center {{ request()->is('login') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
+                        Login
+                    </a>
+                    <a href="{{ route('register') }}" 
+                    class="px-6 py-2.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-sm rounded-2xl hover:shadow-lg transition shadow-md font-black font-helvetica min-h-[44px] flex items-center {{ request()->is('register') ? 'ring-4 ring-[#0F4C82]/20' : '' }}">
+                        Register
+                    </a>
+                @endauth
                 </div>
             </div>
         </nav>
