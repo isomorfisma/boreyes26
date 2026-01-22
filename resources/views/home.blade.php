@@ -1478,21 +1478,23 @@
             box-shadow: 0 10px 40px rgba(15, 76, 130, 0.15);
         }
 
-        /* ==================== FLIP CARD STYLES ==================== */
+        /* ==================== FLIP CARD STYLES - IMPROVED ==================== */
         .flip-card {
             perspective: 1000px;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent; /* Remove blue highlight on mobile */
+            touch-action: manipulation; /* Improve touch response */
         }
 
         .flip-card-inner {
             position: relative;
             width: 100%;
             height: 100%;
-            transition: transform 0.8s;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother easing */
             transform-style: preserve-3d;
         }
 
-        .flip-card:hover .flip-card-inner,
+        /* Flipped state */
         .flip-card.flipped .flip-card-inner {
             transform: rotateY(180deg);
         }
@@ -1509,12 +1511,57 @@
 
         .flip-card-front {
             z-index: 2;
+            transform: rotateY(0deg);
         }
 
         .flip-card-back {
             transform: rotateY(180deg);
         }
 
+        /* Hover effect for desktop */
+        @media (hover: hover) and (pointer: fine) {
+            .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+            
+            .flip-card.flipped:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+        }
+
+        /* Mobile specific improvements */
+        @media (max-width: 1024px) {
+            .flip-card {
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            
+            /* Disable hover on mobile */
+            .flip-card:hover .flip-card-inner {
+                transform: none;
+            }
+            
+            .flip-card.flipped .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+            
+            /* Active state feedback */
+            .flip-card:active {
+                opacity: 0.9;
+            }
+        }
+
+        /* Ensure smooth performance */
+        .flip-card-inner,
+        .flip-card-front,
+        .flip-card-back {
+            will-change: transform;
+        }
+
+        /* Remove will-change after animation completes */
+        .flip-card-inner.animation-complete {
+            will-change: auto;
+        }
         /* ==================== GRADIENT ANIMATIONS ==================== */
         @keyframes gradient-shift {
             0% { background-position: 0% 50%; }
@@ -2338,30 +2385,74 @@ function scrollToNavAndOpenDropdown() {
             });
 
             // ============================================
-            // FLIP CARD FUNCTIONALITY
+            // FLIP CARD FUNCTIONALITY - IMPROVED MOBILE
             // ============================================
             const flipCards = document.querySelectorAll('.flip-card');
             
             flipCards.forEach(card => {
                 let isFlipped = false;
+                let isAnimating = false; // Prevent multiple clicks during animation
                 
-                card.addEventListener('click', function(e) {
-                    if (e.target.closest('button')) return;
+                // Main card click handler
+                const handleCardClick = function(e) {
+                    // Ignore if clicking on close button or if currently animating
+                    if (e.target.closest('button') || isAnimating) return;
                     
-                    if (window.innerWidth < 1024) {
-                        isFlipped = !isFlipped;
-                        card.classList.toggle('flipped', isFlipped);
-                    }
+                    isAnimating = true;
+                    isFlipped = !isFlipped;
+                    card.classList.toggle('flipped', isFlipped);
+                    
+                    // Reset animation lock after transition completes
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 800); // Match with CSS transition duration
+                };
+                
+                // Add click event
+                card.addEventListener('click', handleCardClick);
+                
+                // Add touch event for better mobile responsiveness
+                card.addEventListener('touchend', function(e) {
+                    if (e.target.closest('button') || isAnimating) return;
+                    e.preventDefault(); // Prevent ghost click
+                    handleCardClick(e);
                 });
                 
+                // Close button handler
                 const closeBtn = card.querySelector('.flip-card-back button');
                 if (closeBtn) {
-                    closeBtn.addEventListener('click', function(e) {
+                    const handleClose = function(e) {
                         e.stopPropagation();
+                        if (isAnimating) return;
+                        
+                        isAnimating = true;
                         card.classList.remove('flipped');
                         isFlipped = false;
+                        
+                        setTimeout(() => {
+                            isAnimating = false;
+                        }, 800);
+                    };
+                    
+                    closeBtn.addEventListener('click', handleClose);
+                    closeBtn.addEventListener('touchend', function(e) {
+                        e.preventDefault();
+                        handleClose(e);
                     });
                 }
+                
+                // Optional: Auto-flip back when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (isFlipped && !card.contains(e.target) && !isAnimating) {
+                        isAnimating = true;
+                        card.classList.remove('flipped');
+                        isFlipped = false;
+                        
+                        setTimeout(() => {
+                            isAnimating = false;
+                        }, 800);
+                    }
+                });
             });
 
             // ============================================
