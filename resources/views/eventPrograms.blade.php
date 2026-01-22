@@ -18,36 +18,35 @@
        
     </div>
     
-    <!-- Sparkles - Responsive positioning -->
-    
-    <div class="sparkle-float absolute top-20 right-20 w-12 sm:w-16 h-12 sm:h-16 opacity-80 sparkle-1">
+     <!-- Multiple Sparkles -->
+    <div class="gsap-faq-sparkle sparkle-float absolute top-20 right-20 w-12 sm:w-16 h-12 sm:h-16 opacity-80">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
     </div>
-    <div class="sparkle-float absolute top-40 right-1/4 w-10 sm:w-12 h-10 sm:h-12 opacity-70 sparkle-2" >
+    <div class="gsap-faq-sparkle sparkle-float absolute top-40 right-1/4 w-10 sm:w-12 h-10 sm:h-12 opacity-70">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
     </div>
-    <div class="sparkle-float absolute top-32 left-20 w-11 sm:w-14 h-11 sm:h-14 opacity-75 sparkle-3" >
+    <div class="gsap-faq-sparkle sparkle-float absolute top-32 left-20 w-11 sm:w-14 h-11 sm:h-14 opacity-75">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
     </div>
-    <div class="sparkle-float absolute top-1/3 left-1/4 w-8 sm:w-10 h-8 sm:h-10 opacity-60 sparkle-1" >
+    <div class="gsap-faq-sparkle sparkle-float absolute top-1/3 left-1/4 w-8 sm:w-10 h-8 sm:h-10 opacity-60">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
     </div>
-    <div class="sparkle-float absolute bottom-40 right-32 w-14 sm:w-20 h-14 sm:h-20 opacity-85 sparkle-2" >
+    <div class="gsap-faq-sparkle sparkle-float absolute bottom-40 right-32 w-14 sm:w-20 h-14 sm:h-20 opacity-85">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_10px_rgba(111,151,182,0.9)]">
     </div>
-    <div class="sparkle-float absolute bottom-1/3 left-1/3 w-7 sm:w-8 h-7 sm:h-8 opacity-65 sparkle-3" >
+    <div class="gsap-faq-sparkle sparkle-float absolute bottom-1/3 left-1/3 w-7 sm:w-8 h-7 sm:h-8 opacity-65">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_6px_rgba(211,235,159,0.8)]">
     </div>
-    <div class="sparkle-float absolute top-1/2 right-1/3 w-9 sm:w-11 h-9 sm:h-11 opacity-70 sparkle-1" >
+    <div class="gsap-faq-sparkle sparkle-float absolute top-1/2 right-1/3 w-9 sm:w-11 h-9 sm:h-11 opacity-70">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
     </div>
-    <div class="sparkle-float absolute bottom-32 left-40 w-10 sm:w-13 h-10 sm:h-13 opacity-75 sparkle-2" >
+    <div class="gsap-faq-sparkle sparkle-float absolute bottom-32 left-40 w-10 sm:w-13 h-10 sm:h-13 opacity-75">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
     </div>
-    <div class="sparkle-float absolute top-1/2 right-1/2 w-9 sm:w-11 h-9 sm:h-11 opacity-70 sparkle-3" >
+    <div class="gsap-faq-sparkle sparkle-float absolute top-1/2 right-1/2 w-9 sm:w-11 h-9 sm:h-11 opacity-70">
         <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
     </div>
-    <div class="sparkle-float absolute bottom-32 left-60 w-10 sm:w-13 h-10 sm:h-13 opacity-75 sparkle-1">
+    <div class="gsap-faq-sparkle sparkle-float absolute bottom-32 left-60 w-10 sm:w-13 h-10 sm:h-13 opacity-75">
         <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
     </div>
     
@@ -70,7 +69,7 @@
                 <div class="w-32 h-1.5 bg-gradient-to-r from-white via-[#D3EB9F] to-white mb-8 rounded-full shadow-lg hero-line"></div>
 
                 <p class="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 text-[#D3EB9F] font-marola drop-shadow-md hero-tagline">
-                    #ExploreAdventureTogether
+                    #EyesOnTheFuture
                 </p>
 
                 <p class="text-base sm:text-lg md:text-xl leading-relaxed font-garet max-w-2xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] hero-description" style="text-shadow: 1px 1px 3px rgba(15,76,130,0.4);">
@@ -102,7 +101,7 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 1</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 1</span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Company Talks</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
@@ -123,19 +122,31 @@
                 </div>
             </div>
 
+            <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-2 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 15, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">Main Campus Hall</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">4th March 2026</p>
+                    </div>
+                </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">Bale Sawala, Padjadjaran University</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
@@ -143,7 +154,7 @@
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">An exceptional opportunity to hear directly from industry leaders about the latest trends, career opportunities, and business insights that will enrich your knowledge.</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Company Talks is a seminar-style event that brings industry professionals to share insights about the professional world. Through talks and discussions, students can explore various career paths and learn from real workplace experiences. This event also helps participants understand essential skills needed in the industry.</p>
                 </div>
             </div>
         </div>
@@ -159,7 +170,7 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 2</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 2</span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">CSR</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
@@ -181,27 +192,40 @@
                 </div>
             </div>
 
+            <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-1 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 20, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">Hope Orphanage</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">28th March 2026</p>
                     </div>
                 </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">Kepulauan Seribu, Jakarta</p>
+                    </div>
+                </div>
+
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
                     <h3 class="font-black text-[#0F4C82] mb-2 sm:mb-3 font-helvetica flex items-center text-base sm:text-lg">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Manifest social care by joining community service activities that make a real impact. Let's share happiness and make a difference together!</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">The CSR Event is designed to raise environmental awareness by involving participants in simple and meaningful activities. The event includes a short introduction to seagrass and its importance for marine ecosystems, followed by a hands-on seagrass planting activity that allows participants to work together.</p>
                 </div>
             </div>
         </div>
@@ -217,7 +241,7 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 3</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 3</span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Field Trip</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
@@ -239,27 +263,41 @@
                 </div>
             </div>
 
+              <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-2 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 25, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">National Museum</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">4th April 2026</p>
                     </div>
                 </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">TBA</p>
+                    </div>
+                </div>
+
+           
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
                     <h3 class="font-black text-[#0F4C82] mb-2 sm:mb-3 font-helvetica flex items-center text-base sm:text-lg">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Direct exploration to interesting locations that enrich insights and practical knowledge. An unforgettable learning experience outside the classroom!</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">This field trip gives participants the opportunity to visit an oil and gas company and see how the industry works in real life. The event includes a guided company visit, facility tour, and discussion sessions with industry representatives. Through this visit, participants can learn directly from professionals and get a clearer picture of daily operations in the oil and gas sector.</p>
                 </div>
             </div>
         </div>
@@ -267,7 +305,7 @@
 </section>
 
 <!-- Event Program 4 (Image Right) -->
-<section id="final-competition" class="py-12 sm:py-16 lg:py-20 xl:py-28 bg-white scroll-mt-20 relative overflow-hidden program-section">
+<section id="ignite-talks" class="py-12 sm:py-16 lg:py-20 xl:py-28 bg-white scroll-mt-20 relative overflow-hidden program-section">
     
     <!-- Particle Effects -->
     <div class="particle absolute top-16 right-12 w-2 h-2 bg-[#D3EB9F]/30 rounded-full"></div>
@@ -275,8 +313,8 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 4</span>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Final Competition</h2>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 4</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Ignite Talks</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
 
@@ -296,28 +334,40 @@
                     </div>
                 </div>
             </div>
-
+              <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-1 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 20, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">Hope Orphanage</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">28th March 2026</p>
                     </div>
                 </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">TBA</p>
+                    </div>
+                </div>
+
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
                     <h3 class="font-black text-[#0F4C82] mb-2 sm:mb-3 font-helvetica flex items-center text-base sm:text-lg">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Manifest social care by joining community service activities that make a real impact. Let's share happiness and make a difference together!</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Ignite Talks is an initiative to strengthen the bonds within the SC community by connecting student chapters across Indonesia. Through casual sharing sessions, participants can talk about their annual events, exchange experiences, and reflect on their SPE journey.</p>
                 </div>
             </div>
         </div>
@@ -325,7 +375,7 @@
 </section>
 
 <!-- Event Program 5 (Image Left) -->
-<section id="ignite-talks" class="py-12 sm:py-16 lg:py-20 xl:py-28 bg-[#F8FBFC] scroll-mt-20 relative overflow-hidden program-section">
+<section id="final-competition" class="py-12 sm:py-16 lg:py-20 xl:py-28 bg-[#F8FBFC] scroll-mt-20 relative overflow-hidden program-section">
     
     <!-- Floating Blobs -->
     <div class="hidden lg:block absolute top-20 left-20 w-64 h-64 bg-[#6F97B6]/10 rounded-full blur-3xl blob-animate-1"></div>
@@ -333,8 +383,8 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 5</span>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Ignite Talks</h2>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 5</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">final-competition</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
 
@@ -355,27 +405,41 @@
                 </div>
             </div>
 
+              <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-2 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 25, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">National Museum</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">10th May 2026</p>
                     </div>
                 </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">TBA</p>
+                    </div>
+                </div>
+
+         
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
                     <h3 class="font-black text-[#0F4C82] mb-2 sm:mb-3 font-helvetica flex items-center text-base sm:text-lg">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Direct exploration to interesting locations that enrich insights and practical knowledge. An unforgettable learning experience outside the classroom!</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">The final competition of Boreyes 2026 marked the final stage of the event, bringing together top teams from all five competition categories to present and defend their work before the judges.</p>
                 </div>
             </div>
         </div>
@@ -391,7 +455,7 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 6</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 6</span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Funday</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
@@ -413,27 +477,41 @@
                 </div>
             </div>
 
+              <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-1 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 20, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">Hope Orphanage</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">10th May 2026</p>
                     </div>
                 </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">TBA</p>
+                    </div>
+                </div>
+
+           
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
                     <h3 class="font-black text-[#0F4C82] mb-2 sm:mb-3 font-helvetica flex items-center text-base sm:text-lg">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Manifest social care by joining community service activities that make a real impact. Let's share happiness and make a difference together!</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Fun Day is a light and enjoyable event held after the Boreyes 2026 competitions, providing participants with a relaxed space to unwind and enjoy simple activities together after the competition sessions. The event includes fun activities and informal interactions in a relaxed atmosphere.</p>
                 </div>
             </div>
         </div>
@@ -449,7 +527,7 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12 program-header">
-            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">Program 7</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#D3EB9F]/20 text-[#0F4C82] text-xs font-black rounded-full font-helvetica inline-block mb-3 sm:mb-4 badge-float">EVENT 7</span>
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4 sm:mb-6 px-4 section-title">Banquet</h2>
             <div class="w-20 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-4 sm:mb-6 rounded-full shadow-md divider-line"></div>
         </div>
@@ -471,27 +549,41 @@
                 </div>
             </div>
 
+              <!-- Ubah struktur info cards dari grid 2 kolom menjadi stack vertical -->
             <div class="order-2 lg:order-2 program-details">
-                <div class="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 info-cards-wrapper">
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica">February 25, 2025</p></div>
+                <!-- Date Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-2 sm:mb-3">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#0F4C82]/10 to-[#6F97B6]/10 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
-                    <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                        </div>
-                        <div><p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p><p class="text-xs sm:text-sm font-black text-[#0F4C82] font-helvetica line-clamp-1">National Museum</p></div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Date</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">10th May 2026</p>
                     </div>
                 </div>
+
+                <!-- Location Card (Full Width) -->
+                <div class="flex items-center bg-white rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-md sm:shadow-lg border border-[#0F4C82]/10 info-card mb-4 sm:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-[#C5E6C9]/20 to-[#D3EB9F]/20 rounded-md sm:rounded-lg flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0 icon-container">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] sm:text-xs text-[#6B7280] font-garet">Location</p>
+                        <p class="text-[11px] sm:text-sm font-black text-[#0F4C82] font-helvetica">TBA</p>
+                    </div>
+                </div>
+
+          
                 <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md sm:shadow-lg border border-[#0F4C82]/10 mb-4 sm:mb-6 description-card">
                     <h3 class="font-black text-[#0F4C82] mb-2 sm:mb-3 font-helvetica flex items-center text-base sm:text-lg">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 text-[#D3EB9F] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         About Program
                     </h3>
-                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">Direct exploration to interesting locations that enrich insights and practical knowledge. An unforgettable learning experience outside the classroom!</p>
+                    <p class="text-[#6B7280] leading-relaxed font-garet text-sm sm:text-base">The Banquet is a dinner event that marks the closing of Boreyes 2026. This event brings together participants, committees, and guests to celebrate the end of the series of activities in a warm and relaxed atmosphere. The banquet includes a dinner session, closing remarks, and the announcement of competition winners.</p>
                 </div>
             </div>
         </div>
@@ -1085,6 +1177,53 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+     // ============================================
+            // PARALLAX EFFECTS (Desktop only)
+            // ============================================
+            if (window.innerWidth >= 768) {
+                gsap.to('.gsap-faq-sparkle', {
+                    y: 100,
+                    opacity: 0,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: 'section',
+                        start: 'top top',
+                        end: 'bottom top',
+                        scrub: 1
+                    }
+                });
+            }
+            
+          // 2. SPARKLES - Individual animations
+            const sparkles = gsap.utils.toArray('.gsap-faq-sparkle');
+            sparkles.forEach((sparkle, index) => {
+                // Initial entrance
+                gsap.from(sparkle, {
+                    scale: 0,
+                    opacity: 0,
+                    rotation: 360,
+                    duration: 1,
+                    delay: index * 0.05,
+                    ease: 'back.out(1.5)'
+                });
+                
+                // Continuous rotation
+                gsap.to(sparkle, {
+                    rotation: 360,
+                    duration: 20 + (index * 3),
+                    ease: 'none',
+                    repeat: -1
+                });
+                
+                // Pulse effect
+                gsap.to(sparkle, {
+                    scale: 1.1,
+                    duration: 2.5 + (index * 0.2),
+                    ease: 'sine.inOut',
+                    repeat: -1,
+                    yoyo: true
+                });
+            });
 
     console.log('🎨 Advanced GSAP Animations initialized successfully!');
 });

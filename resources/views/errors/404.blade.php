@@ -404,7 +404,7 @@
                     <div class="relative">
                         <div class="absolute -inset-4 sm:-inset-8 bg-white/20 backdrop-blur-md rounded-full blur-2xl"></div>
                         <div class="relative bg-white/10 backdrop-blur-md border-2 sm:border-4 border-white/40 rounded-full p-8 sm:p-10 lg:p-12 shadow-2xl">
-                            <img src="assets/svg/LOGO.svg" alt="Logo" class="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 drop-shadow-2xl object-contain"/>
+                            <img src="{{ asset('assets/svg/LOGO.svg') }}" alt="Logo" class="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 drop-shadow-2xl object-contain"/>
                         </div>
                         <!-- Decorative Ring 1 -->
                         <div class="absolute inset-0 border-2 sm:border-4 border-[#D3EB9F]/30 rounded-full animate-pulse-slow" style="animation-duration: 4s;"></div>

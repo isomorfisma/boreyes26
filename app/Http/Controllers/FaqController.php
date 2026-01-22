@@ -8,7 +8,7 @@ class FaqController extends Controller
 {
     public function index()
     {
-        $faqs = Faq::latest()->get();
+        $faqs = Faq::orderBy('id', 'asc')->get();
         return view('faq.index', compact('faqs'));
     }
 }

@@ -21,8 +21,8 @@
                                 <div class="text-sm text-[#D3EB9F] font-garet">SPE Unpad Student Chapter</div>
                             </div>
                         </div>
-                        <p class="text-sm text-white/95 mb-6 leading-relaxed max-w-md font-garet">
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        <p class="text-sm text-white/95 mb-6 leading-relaxed max-w-md font-garet text-justify">
+                          BOREYES International Energy Fair is the largest annual event organized by SPE Unpad SC, focusing on energy-related competitions and supporting non-competition activities. The competitions serve as a platform for individuals and teams to develop and present innovative solutions addressing zero carbon emissions, energy production, efficiency, and sustainability, while promoting technological advancement in the energy sector.
                         </p>
                         <div class="flex space-x-3">
                             <a href="#" class="w-10 h-10 bg-white/15 backdrop-blur-md rounded-xl flex items-center justify-center hover:bg-[#D3EB9F] hover:text-[#0F4C82] transition duration-300">

@@ -316,6 +316,19 @@
 
                                         <span class="text-sm font-bold font-helvetica">Field Trip</span>
                                     </a>
+
+                                    <a href="/eventPrograms#ignite-talks" 
+                                      x-show="showItems"
+                                        x-transition:enter="transition ease-out duration-300 delay-[320ms]"
+                                        x-transition:enter-start="opacity-0 translate-y-2"
+                                        x-transition:enter-end="opacity-100 translate-y-0"
+                                        x-transition:leave="transition ease-in duration-100"
+                                        x-transition:leave-start="opacity-100 translate-y-0"
+                                        x-transition:leave-end="opacity-0 translate-y-1"
+                                        class="flex items-center px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition group">
+
+                                        <span class="text-sm font-bold font-helvetica">Ignite Talks</span>
+                                    </a>
                                     
                                     <a href="/eventPrograms#final-competition" 
                                       x-show="showItems"
@@ -330,18 +343,7 @@
                                         <span class="text-sm font-bold font-helvetica">Final Competition</span>
                                     </a>
                                     
-                                    <a href="/eventPrograms#ignite-talks" 
-                                      x-show="showItems"
-                                        x-transition:enter="transition ease-out duration-300 delay-[320ms]"
-                                        x-transition:enter-start="opacity-0 translate-y-2"
-                                        x-transition:enter-end="opacity-100 translate-y-0"
-                                        x-transition:leave="transition ease-in duration-100"
-                                        x-transition:leave-start="opacity-100 translate-y-0"
-                                        x-transition:leave-end="opacity-0 translate-y-1"
-                                        class="flex items-center px-4 py-3 text-[#0F4C82] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 transition group">
-
-                                        <span class="text-sm font-bold font-helvetica">Ignite Talks</span>
-                                    </a>
+                                    
                                     
                                     <a href="/eventPrograms#funday" 
                                       x-show="showItems"
@@ -492,7 +494,7 @@
                             x-transition:leave-end="opacity-0 -translate-y-1"
                             class="mt-2 ml-4 space-y-1 border-l-2 border-[#D3EB9F] pl-4">
                             
-                            <a href="#about" @click="open = false"  
+                            <a href="/#about" @click="open = false"  
                             x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[60ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -500,7 +502,7 @@
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                 What is BOREYES?
                             </a>
-                            <a href="#grand-theme" @click="open = false"  
+                            <a href="/#grand-theme" @click="open = false"  
                             x-show="showItems"                         
                                 x-transition:enter="transition ease-out duration-300 delay-[120ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -508,7 +510,7 @@
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                 Grand Theme 2026
                             </a>
-                            <a href="#logo-mascot" @click="open = false"      
+                            <a href="/#logo-mascot" @click="open = false"      
                             x-show="showItems"                     
                                 x-transition:enter="transition ease-out duration-300 delay-[180ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -516,7 +518,7 @@
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                 Logo & Mascot
                             </a>
-                            <a href="#team-profile" @click="open = false"     
+                            <a href="/#team-profile" @click="open = false"     
                             x-show="showItems"                      
                                 x-transition:enter="transition ease-out duration-300 delay-[240ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -524,7 +526,7 @@
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                 Team Profile
                             </a>
-                            <a href="#timeline" @click="open = false" 
+                            <a href="/#timeline" @click="open = false" 
                             x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[320ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
@@ -570,13 +572,13 @@
                                 x-transition:enter-end="opacity-100 translate-y-0"
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                Business Case</a>
-                            <a href="/case-Study" @click="open = false"   x-show="showItems"
+                            <a href="/competitions/case-Study" @click="open = false"   x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[240ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
                                 x-transition:enter-end="opacity-100 translate-y-0"
                                 class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
                                Case Study</a>
-                            <a href="/competitions/plan-Of-Development-Competition" @click="open = false"   x-show="showItems"
+                            <a href="/competitions/plan-Of-Development" @click="open = false"   x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[320ms]"
                                 x-transition:enter-start="opacity-0 translate-y-2"
                                 x-transition:enter-end="opacity-100 translate-y-0"
@@ -630,6 +632,16 @@
                                 Field Trip
                             </a>
 
+                             <a href="/eventPrograms#ignite-talks" @click="open = false"
+                             x-show="showItems"
+                                x-transition:enter="transition ease-out duration-300 delay-[320ms]"
+                                x-transition:enter-start="opacity-0 translate-y-2"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
+                                 
+                                Ignite Talks
+                            </a>
+
                             <a href="/eventPrograms#final-competition" @click="open = false"
                               x-show="showItems"
                                 x-transition:enter="transition ease-out duration-300 delay-[240ms]"
@@ -640,15 +652,7 @@
                                 Final Competition
                             </a>
 
-                            <a href="/eventPrograms#ignite-talks" @click="open = false"
-                             x-show="showItems"
-                                x-transition:enter="transition ease-out duration-300 delay-[320ms]"
-                                x-transition:enter-start="opacity-0 translate-y-2"
-                                x-transition:enter-end="opacity-100 translate-y-0"
-                                class="flex items-center px-3 py-2 rounded-lg text-xs text-[#6B7280] hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20 hover:text-[#0F4C82] font-garet">
-                                 
-                                Ignite Talks
-                            </a>
+                           
 
                             <a href="/eventPrograms#funday" @click="open = false"
                               x-show="showItems"

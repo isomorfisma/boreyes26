@@ -14,7 +14,7 @@
             Thanks for signing up! Before getting started, please verify your email
             address by clicking on the link we just emailed to you.
             <br><br>
-            If you didn’t receive the email, we can send another one.
+            If you didn't receive the email, we can send another one.
         </p>
 
         @if (session('status') === 'verification-link-sent')

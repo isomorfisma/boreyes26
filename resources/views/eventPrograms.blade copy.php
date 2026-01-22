@@ -14,27 +14,17 @@
     <div class="hidden md:block absolute bottom-0 left-0 w-1/4 h-80 opacity-15 pointer-events-none palm-shadow-2" style="background-image: url('/path/to/palm-shadow.png'); background-size: contain; background-position: bottom left; background-repeat: no-repeat; transform: scaleX(-1);"></div>
     
      <!-- Multiple Sparkles -->
-    <div class="sparkle-float absolute top-20 right-20 w-12 sm:w-16 h-12 sm:h-16 opacity-80 animate-float">
+    <div class="gsap-hero-sparkle absolute top-20 right-20 w-12 sm:w-16 h-12 sm:h-16 opacity-80">
         <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
     </div>
-    <div class="sparkle-float absolute top-40 right-1/4 w-10 sm:w-12 h-10 sm:h-12 opacity-70 animate-float" >
-        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
-    </div>
-    <div class="sparkle-float absolute top-32 left-20 w-11 sm:w-14 h-11 sm:h-14 opacity-75 animate-float" >
-        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
-    </div>
-    <div class="sparkle-float absolute top-1/3 left-1/4 w-8 sm:w-10 h-8 sm:h-10 opacity-60 animate-float" >
-        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
-    </div>
-    <div class="sparkle-float absolute bottom-40 right-32 w-14 sm:w-20 h-14 sm:h-20 opacity-85 animate-float" >
-        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_10px_rgba(111,151,182,0.9)]">
-    </div>
-   
-    <div class="sparkle-float absolute top-1/2 right-1/2 w-9 sm:w-11 h-9 sm:h-11 opacity-70 animate-float" >
+    <div class="gsap-hero-sparkle absolute top-40 right-1/4 w-10 sm:w-12 h-10 sm:h-12 opacity-70">
         <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
     </div>
-    <div class="sparkle-float absolute bottom-32 left-60 w-10 sm:w-13 h-10 sm:h-13 opacity-75 animate-float">
-        <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    <div class="gsap-hero-sparkle absolute top-32 left-20 w-11 sm:w-14 h-11 sm:h-14 opacity-75">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="gsap-hero-sparkle absolute bottom-40 right-32 w-14 sm:w-20 h-14 sm:h-20 opacity-85">
+        <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_10px_rgba(111,151,182,0.9)]">
     </div>
     
     <!-- Floating Circles -->
@@ -583,7 +573,6 @@ html {
 }
 </style>
 @endpush
-
 @push('scripts')
 <!-- GSAP Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -598,39 +587,74 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     // CONTINUOUS ANIMATIONS (Always Running)
     // ==========================================
-
-    // Hero sparkles floating animation
-    gsap.to('.sparkle-1', {
-        y: -30,
-        x: 10,
-        rotation: 15,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: 'power1.inOut'
+    
+    // Hero sparkles - FIXED VERSION
+    const heroSparkles = gsap.utils.toArray('.gsap-hero-sparkle');
+    heroSparkles.forEach((sparkle, index) => {
+        // Initial appearance animation
+        gsap.from(sparkle, {
+            scale: 0,
+            opacity: 0,
+            rotation: 360,
+            duration: 1,
+            delay: index * 0.15,
+            ease: 'back.out(1.5)'
+        });
+        
+        // Continuous rotation
+        gsap.to(sparkle, {
+            rotation: 360,
+            duration: 20 + (index * 3),
+            ease: 'none',
+            repeat: -1
+        });
+        
+        // Floating up and down
+        gsap.to(sparkle, {
+            y: -25 - (index * 5),
+            duration: 3 + (index * 0.5),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true
+        });
+        
+        // Slight horizontal movement
+        gsap.to(sparkle, {
+            x: (index % 2 === 0 ? 15 : -15),
+            duration: 4 + (index * 0.3),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: index * 0.2
+        });
+        
+        // Scale pulsing
+        gsap.to(sparkle, {
+            scale: 1.1,
+            duration: 2 + (index * 0.2),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: index * 0.1
+        });
     });
 
-    gsap.to('.sparkle-2', {
-        y: -40,
-        x: -15,
-        rotation: -20,
-        duration: 4,
-        delay: 0.5,
-        repeat: -1,
-        yoyo: true,
-        ease: 'power1.inOut'
-    });
-
-    gsap.to('.sparkle-3', {
-        y: -25,
-        x: 20,
-        rotation: 25,
-        duration: 3.5,
-        delay: 1,
-        repeat: -1,
-        yoyo: true,
-        ease: 'power1.inOut'
-    });
+    // ============================================
+    // PARALLAX EFFECTS (Desktop only)
+    // ============================================
+    if (window.innerWidth >= 768) {
+        gsap.to('.gsap-hero-sparkle', {
+            y: 100,
+            opacity: 0,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: 'section',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: 1
+            }
+        });
+    }
 
     // Palm shadows swaying
     gsap.to('.palm-shadow-1', {
@@ -883,7 +907,7 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: 0.6,
             ease: 'power2.out'
         }, '-=0.4')
-        .from('.cta-buttons a', {
+        .from('.cta-section a', {
             y: 30,
             opacity: 0,
             duration: 0.6,
@@ -944,6 +968,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('🎨 GSAP Animations initialized successfully!');
+    console.log('✨ Sparkles found:', heroSparkles.length);
 });
 </script>
 @endpush

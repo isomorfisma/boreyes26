@@ -7,35 +7,16 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
+// Public Routes
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
 Route::get('/eventPrograms', function () {
     return view('eventPrograms');
 })->name('event-programs');
 
-route::get('/faq', function () {
-    return view('faq');
-})->name('faq');
-
-route::get('/register', function () {
-    return view('auth.register-team');
-})->name('register');
-
-route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
+Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
 
 // Competition Routes
 Route::prefix('competitions')->name('competitions.')->group(function () {
@@ -46,63 +27,54 @@ Route::prefix('competitions')->name('competitions.')->group(function () {
     Route::view('/plan-Of-Development', 'competitions.plan-Of-Development')->name('plan-Of-Development');
 });
 
+// Auth routes (login, register, etc.) - handled by auth.php
+require __DIR__.'/auth.php';
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
+// Protected Routes - Require Authentication
+Route::middleware(['auth'])->group(function () {
+    // Dashboard - only accessible after email verification
+    Route::get('/dashboard', [DashboardController::class, 'index'])
+        ->middleware('verified')
+        ->name('dashboard');
     
-
+    // Profile
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-use App\Http\Controllers\SubmissionController;
-
-Route::middleware(['auth'])->group(function () {
-    Route::post('/submission', [SubmissionController::class, 'store'])
+    
+    // Submission
+    Route::post('/submission', [App\Http\Controllers\SubmissionController::class, 'store'])
         ->name('submission.store');
 });
 
-
-Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
-
+// Admin Routes
 use App\Http\Controllers\Admin\FaqController as AdminFaqController;
+
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
-    Route::resource('faqs', AdminFaqController::class)->except(['show']);
-});
-
-Route::middleware(['auth', 'admin'])->group(function () {
-   
-    Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])
-    ->name('admin.dashboard');
+    // Dashboard
+    Route::get('/dashboard', [AdminDashboardController::class, 'index'])
+        ->name('dashboard');
     
-    Route::get('/admin/registrations', [UserVerificationController::class, 'index'])
-        ->name('admin.registrations');
-
-    Route::patch('/admin/registrations/{user}/verify', [UserVerificationController::class, 'verify'])
-        ->name('admin.registrations.verify');
-
-    Route::patch('/admin/registrations/{user}/reject', [UserVerificationController::class, 'reject'])
-        ->name('admin.registrations.reject');
-
-Route::get('/admin/registrations/{user}/detail', [UserVerificationController::class, 'getTeamDetail'])->name('admin.registrations.detail');
-
-    Route::get('/admin/submissions', [SubmissionReviewController::class, 'index'])
-        ->name('admin.submissions');
-
-    Route::post('/admin/submissions/{user}/pass', [SubmissionReviewController::class, 'pass'])
-        ->name('admin.submissions.pass');
-
-    Route::post('/admin/submissions/{user}/fail', [SubmissionReviewController::class, 'fail'])
-        ->name('admin.submissions.fail');
-
-    Route::post('/admin/submissions/{user}/pending', [SubmissionReviewController::class, 'pending'])
-        ->name('admin.submissions.pending');
-  
-
+    // FAQ Management
+    Route::resource('faqs', AdminFaqController::class)->except(['show']);
+    
+    // Registration Management
+    Route::get('/registrations', [UserVerificationController::class, 'index'])
+        ->name('registrations');
+    Route::patch('/registrations/{user}/verify', [UserVerificationController::class, 'verify'])
+        ->name('registrations.verify');
+    Route::patch('/registrations/{user}/reject', [UserVerificationController::class, 'reject'])
+        ->name('registrations.reject');
+    Route::get('/registrations/{user}/detail', [UserVerificationController::class, 'getTeamDetail'])
+        ->name('registrations.detail');
+    
+    // Submission Review
+    Route::get('/submissions', [SubmissionReviewController::class, 'index'])
+        ->name('submissions');
+    Route::post('/submissions/{user}/pass', [SubmissionReviewController::class, 'pass'])
+        ->name('submissions.pass');
+    Route::post('/submissions/{user}/fail', [SubmissionReviewController::class, 'fail'])
+        ->name('submissions.fail');
+    Route::post('/submissions/{user}/pending', [SubmissionReviewController::class, 'pending'])
+        ->name('submissions.pending');
 });
-
-
-
-require __DIR__.'/auth.php';

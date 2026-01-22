@@ -46,22 +46,7 @@
                     @enderror
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                        <label for="order" class="block text-sm font-medium text-gray-700 mb-2">
-                            Display Order
-                        </label>
-                        <input type="number" name="order" id="order" value="{{ old('order', 0) }}" min="0"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    </div>
-                    <div class="flex items-end">
-                        <label class="flex items-center">
-                            <input type="checkbox" name="is_active" value="1" {{ old('is_active', true) ? 'checked' : '' }}
-                                   class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                            <span class="ml-2 text-sm text-gray-700">Active</span>
-                        </label>
-                    </div>
-                </div>
+                
             </div>
         </div>
 

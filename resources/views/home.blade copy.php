@@ -1271,3 +1271,687 @@ function scrollToNavAndOpenDropdown() {
     }, 500);
 }
 </script>
+
+
+
+@extends('layouts.app')
+
+@section('title', 'Home')
+
+@section('content')
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-b from-[#6F97B6] via-[#8CCDCF] to-[#D6EBDF] text-white overflow-hidden min-h-screen flex items-center pb-0">
+    <!-- Grunge Texture -->
+    <div class="absolute inset-0 opacity-20 mix-blend-multiply gsap-grunge" style="background-image: url('/path/to/grunge-texture.png'); background-size: cover; background-position: center;"></div>
+    
+    <!-- Palm Shadows - Hidden on Mobile -->
+    <div class="hidden md:block absolute top-0 right-0 w-1/3 h-96 opacity-15 pointer-events-none palm-sway gsap-palm-right" style="background-image: url('/path/to/palm-shadow.png'); background-size: contain; background-position: top right; background-repeat: no-repeat;"></div>
+    <div class="hidden md:block absolute bottom-20 left-0 w-1/4 h-80 opacity-15 pointer-events-none palm-sway-reverse gsap-palm-left" style="background-image: url('/path/to/palm-shadow.png'); background-size: contain; background-position: bottom left; background-repeat: no-repeat; transform: scaleX(-1);"></div>
+    
+    <!-- Multiple Sparkles -->
+    <div class="sparkle-float gsap-comp-sparkle absolute top-20 right-20 w-8 sm:w-12 md:w-16 h-8 sm:h-12 md:h-16 opacity-80">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="sparkle-float gsap-comp-sparkle absolute top-40 right-1/4 w-7 sm:w-10 md:w-12 h-7 sm:h-10 md:h-12 opacity-70">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="sparkle-float gsap-comp-sparkle absolute top-32 left-20 w-8 sm:w-11 md:w-14 h-8 sm:h-11 md:h-14 opacity-75">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="hidden sm:block sparkle-float gsap-comp-sparkle absolute top-1/3 left-1/4 w-8 sm:w-10 h-8 sm:h-10 opacity-60">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="sparkle-float gsap-comp-sparkle absolute bottom-40 right-32 w-10 sm:w-14 md:w-20 h-10 sm:h-14 md:h-20 opacity-85">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_10px_rgba(111,151,182,0.9)]">
+    </div>
+    <div class="hidden sm:block sparkle-float gsap-comp-sparkle absolute bottom-1/3 left-1/3 w-7 sm:w-8 h-7 sm:h-8 opacity-65">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_6px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="hidden md:block sparkle-float gsap-comp-sparkle absolute top-1/2 right-1/3 w-9 sm:w-11 h-9 sm:h-11 opacity-70">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="hidden md:block sparkle-float gsap-comp-sparkle absolute bottom-32 left-40 w-10 sm:w-13 h-10 sm:h-13 opacity-75">
+        <img src="{{ asset('assets/svg/SPARKLE_IJO.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    <div class="hidden lg:block sparkle-float gsap-comp-sparkle absolute top-1/2 right-1/2 w-9 sm:w-11 h-9 sm:h-11 opacity-70">
+        <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(111,151,182,0.8)]">
+    </div>
+    <div class="hidden lg:block sparkle-float gsap-comp-sparkle absolute bottom-32 left-60 w-10 sm:w-13 h-10 sm:h-13 opacity-75">
+        <img src="{{ asset('assets/svg/SPARKLE_BIRU.svg') }}" alt="Sparkle" class="w-full h-full drop-shadow-[0_0_8px_rgba(211,235,159,0.8)]">
+    </div>
+    
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 w-full z-10">
+        <!-- WRAPPER: kiri + kanan -->
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            
+            <!-- Logo di Mobile (ditampilkan di atas) -->
+            <div class="lg:hidden flex items-center justify-center w-full gsap-hero-logo-wrapper-mobile">
+                <div class="relative">
+                    <!-- Glow Effect -->
+                    <div class="gsap-hero-glow absolute -inset-6 bg-white/20 backdrop-blur-md rounded-full blur-2xl"></div>
+
+                    <!-- Main Logo Container -->
+                    <div class="gsap-hero-logo-container relative bg-white/10 backdrop-blur-md border-4 border-white/40 rounded-full p-6 sm:p-8 shadow-2xl">
+                        <img src="{{ asset('assets/svg/LOGO.svg') }}"
+                             alt="Logo"
+                             class="gsap-hero-logo w-40 h-40 sm:w-48 sm:h-48 drop-shadow-2xl object-contain" />
+                    </div>
+
+                    <!-- Animated Rings -->
+                    <div class="gsap-hero-ring-1 absolute inset-0 border-4 border-[#D3EB9F]/30 rounded-full"></div>
+                    <div class="gsap-hero-ring-2 absolute -inset-4 border-2 border-dashed border-[#C5E6C9]/40 rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- LEFT: Text + Buttons -->
+            <div class="w-full lg:flex-1 space-y-5 sm:space-y-6 lg:space-y-7 text-center lg:text-left">
+                <!-- Main Title with Letter Animation -->
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-helvetica font-black tracking-tighter leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.3)] gsap-hero-title"
+                    style="text-shadow: 2px 2px 4px rgba(15,76,130,0.5), -1px -1px 2px rgba(15,76,130,0.3);">
+                    <span class="gsap-hero-letter inline-block">B</span><span class="gsap-hero-letter inline-block">O</span><span class="gsap-hero-letter inline-block">R</span><span class="gsap-hero-letter inline-block">E</span><span class="gsap-hero-letter inline-block">Y</span><span class="gsap-hero-letter inline-block">E</span><span class="gsap-hero-letter inline-block">S</span>
+                    <br class="block sm:hidden">
+                    <span class="gsap-hero-letter inline-block sm:ml-4">2</span><span class="gsap-hero-letter inline-block">0</span><span class="gsap-hero-letter inline-block">2</span><span class="gsap-hero-letter inline-block">6</span>
+                </h1>
+
+                <!-- Divider Line -->
+                <div class="gsap-hero-divider w-32 sm:w-40 h-1.5 sm:h-2 bg-gradient-to-r from-white via-[#D3EB9F] to-white rounded-full shadow-lg mx-auto lg:mx-0"></div>
+
+                <!-- Tagline -->
+                <p class="gsap-hero-tagline text-2xl sm:text-3xl md:text-4xl font-semibold text-[#D3EB9F] font-marola drop-shadow-md">
+                    #EyesOnTheFuture
+                </p>
+
+                <!-- Buttons -->
+                <div class="pt-4 sm:pt-6 flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start">
+                    <button onclick="scrollToNavAndOpenDropdown()"
+                        class="gsap-hero-btn-primary group inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(211,235,159,0.5)] transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 text-base sm:text-lg min-h-[60px] sm:min-h-[64px] cursor-pointer opacity-100 w-full sm:w-auto">
+                        <span>View Competitions</span>
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-2 bounce-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </button>
+
+                    @guest
+                        <a href="{{ route('register') }}"
+                            class="gsap-hero-btn-secondary group inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 bg-white/10 backdrop-blur-md border-3 border-white text-white font-helvetica font-black rounded-2xl hover:bg-white hover:text-[#0F4C82] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 text-base sm:text-lg min-h-[60px] sm:min-h-[64px] opacity-100 w-full sm:w-auto">
+                            <span class="drop-shadow-[0_1px_1px_rgba(15,76,130,0.35)]">Register Now</span>
+                        </a>
+                    @endguest
+                </div>
+            </div>
+
+            <!-- RIGHT: Logo - VISIBLE FROM LG (Desktop) -->
+            <div class="hidden lg:flex items-center justify-center lg:flex-1 gsap-hero-logo-wrapper">
+                <div class="relative">
+                    <!-- Glow Effect -->
+                    <div class="gsap-hero-glow absolute -inset-8 bg-white/20 backdrop-blur-md rounded-full blur-2xl"></div>
+
+                    <!-- Main Logo Container -->
+                    <div class="gsap-hero-logo-container relative bg-white/10 backdrop-blur-md border-4 border-white/40 rounded-full p-10 lg:p-12 shadow-2xl">
+                        <img src="{{ asset('assets/svg/LOGO.svg') }}"
+                             alt="Logo"
+                             class="gsap-hero-logo w-64 h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 drop-shadow-2xl object-contain" />
+                    </div>
+
+                    <!-- Animated Rings -->
+                    <div class="gsap-hero-ring-1 absolute inset-0 border-4 border-[#D3EB9F]/30 rounded-full"></div>
+                    <div class="gsap-hero-ring-2 absolute -inset-4 border-2 border-dashed border-[#C5E6C9]/40 rounded-full"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   <!-- Wave Divider -->
+    <div class="absolute bottom-0 left-0 right-0 -mb-1">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full wave-svg" preserveAspectRatio="none">
+            <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H0V0Z" fill="#F8FBFC"/>
+        </svg>
+    </div>
+</section>
+
+@push('scripts')
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- GSAP ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ==========================================
+    // LOGO ANIMATIONS (Desktop & Mobile)
+    // ==========================================
+    
+    // Animate logo wrapper (both desktop and mobile)
+    const logoWrappers = gsap.utils.toArray('.gsap-hero-logo-wrapper, .gsap-hero-logo-wrapper-mobile');
+    
+    logoWrappers.forEach((wrapper) => {
+        const logo = wrapper.querySelector('.gsap-hero-logo');
+        const logoContainer = wrapper.querySelector('.gsap-hero-logo-container');
+        const glow = wrapper.querySelector('.gsap-hero-glow');
+        const ring1 = wrapper.querySelector('.gsap-hero-ring-1');
+        const ring2 = wrapper.querySelector('.gsap-hero-ring-2');
+
+        // Initial appearance animation
+        gsap.from(wrapper, {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            ease: 'back.out(1.7)',
+            delay: 0.3
+        });
+
+        // Logo breathing effect
+        gsap.to(logo, {
+            scale: 1.05,
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+
+        // Logo rotation (slow)
+        gsap.to(logo, {
+            rotation: 360,
+            duration: 30,
+            repeat: -1,
+            ease: 'none'
+        });
+
+        // Glow pulsing
+        gsap.to(glow, {
+            scale: 1.2,
+            opacity: 0.5,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+
+        // Ring 1 rotation
+        gsap.to(ring1, {
+            rotation: 360,
+            duration: 20,
+            repeat: -1,
+            ease: 'none'
+        });
+
+        // Ring 2 rotation (opposite direction)
+        gsap.to(ring2, {
+            rotation: -360,
+            duration: 25,
+            repeat: -1,
+            ease: 'none'
+        });
+
+        // Container floating
+        gsap.to(logoContainer, {
+            y: -15,
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+    });
+
+    // ==========================================
+    // HERO TEXT ANIMATIONS
+    // ==========================================
+    
+    // Animate each letter
+    const letters = gsap.utils.toArray('.gsap-hero-letter');
+    gsap.from(letters, {
+        y: 100,
+        opacity: 0,
+        rotation: 180,
+        duration: 0.8,
+        stagger: 0.05,
+        ease: 'back.out(1.7)'
+    });
+
+    // Divider line
+    gsap.from('.gsap-hero-divider', {
+        scaleX: 0,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: 'power3.out'
+    });
+
+    // Tagline
+    gsap.from('.gsap-hero-tagline', {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.7,
+        ease: 'power3.out'
+    });
+
+    // Buttons
+    gsap.from('.gsap-hero-btn-primary', {
+        x: -50,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.9,
+        ease: 'back.out(1.7)'
+    });
+
+    gsap.from('.gsap-hero-btn-secondary', {
+        x: 50,
+        opacity: 0,
+        duration: 0.8,
+        delay: 1,
+        ease: 'back.out(1.7)'
+    });
+
+    // ==========================================
+    // SPARKLES ANIMATIONS
+    // ==========================================
+    
+    const heroSparkles = gsap.utils.toArray('.gsap-comp-sparkle');
+    heroSparkles.forEach((sparkle, index) => {
+        // Initial appearance
+        gsap.from(sparkle, {
+            scale: 0,
+            opacity: 0,
+            rotation: 360,
+            duration: 1,
+            delay: index * 0.15,
+            ease: 'back.out(1.5)'
+        });
+        
+        // Continuous rotation
+        gsap.to(sparkle, {
+            rotation: 360,
+            duration: 20 + (index * 3),
+            ease: 'none',
+            repeat: -1
+        });
+        
+        // Floating up and down
+        gsap.to(sparkle, {
+            y: -25 - (index * 5),
+            duration: 3 + (index * 0.5),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true
+        });
+        
+        // Slight horizontal movement
+        gsap.to(sparkle, {
+            x: (index % 2 === 0 ? 15 : -15),
+            duration: 4 + (index * 0.3),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: index * 0.2
+        });
+        
+        // Scale pulsing
+        gsap.to(sparkle, {
+            scale: 1.1,
+            duration: 2 + (index * 0.2),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: index * 0.1
+        });
+    });
+
+    // ==========================================
+    // PALM SHADOWS
+    // ==========================================
+    
+    gsap.to('.gsap-palm-right', {
+        rotation: 3,
+        transformOrigin: 'top center',
+        duration: 5,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+    });
+
+    gsap.to('.gsap-palm-left', {
+        rotation: -3,
+        transformOrigin: 'top center',
+        duration: 6,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+    });
+
+    // ==========================================
+    // WAVE ANIMATION
+    // ==========================================
+    
+    gsap.to('.wave-svg path', {
+        attr: { d: 'M0 0L60 15C120 30 240 50 360 53.7C480 57 600 43 720 40C840 37 960 43 1080 50C1200 57 1320 63 1380 66.3L1440 70V120H0V0Z' },
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+    });
+
+    // ==========================================
+    // BUTTON HOVER EFFECTS
+    // ==========================================
+    
+    const primaryBtn = document.querySelector('.gsap-hero-btn-primary');
+    const secondaryBtn = document.querySelector('.gsap-hero-btn-secondary');
+
+    if (primaryBtn) {
+        primaryBtn.addEventListener('mouseenter', () => {
+            gsap.to(primaryBtn.querySelector('.bounce-arrow'), {
+                x: 5,
+                duration: 0.3,
+                ease: 'power2.out'
+            });
+        });
+
+        primaryBtn.addEventListener('mouseleave', () => {
+            gsap.to(primaryBtn.querySelector('.bounce-arrow'), {
+                x: 0,
+                duration: 0.3,
+                ease: 'power2.out'
+            });
+        });
+    }
+
+    console.log('🎨 GSAP Hero Animations initialized!');
+    console.log('✨ Logo wrappers found:', logoWrappers.length);
+});
+</script>
+@endpush
+
+@push('scripts')
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- GSAP ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ==========================================
+    // LOGO ANIMATIONS - Mobile & Desktop
+    // ==========================================
+    
+    // Function untuk animate logo (dipakai untuk mobile dan desktop)
+    function animateLogo(wrapperSelector) {
+        const logoWrapper = document.querySelector(wrapperSelector);
+        if (!logoWrapper) return;
+
+        // Logo container entrance
+        const logoContainer = logoWrapper.querySelector('.gsap-hero-logo-container');
+        if (logoContainer) {
+            gsap.from(logoContainer, {
+                scale: 0,
+                rotation: -180,
+                opacity: 0,
+                duration: 1.5,
+                delay: 0.5,
+                ease: 'elastic.out(1, 0.6)'
+            });
+        }
+
+        // Logo image subtle float
+        const logo = logoWrapper.querySelector('.gsap-hero-logo');
+        if (logo) {
+            gsap.to(logo, {
+                y: -15,
+                rotation: 5,
+                duration: 3,
+                ease: 'sine.inOut',
+                repeat: -1,
+                yoyo: true
+            });
+        }
+
+        // Glow effect pulse
+        const glow = logoWrapper.querySelector('.gsap-hero-glow');
+        if (glow) {
+            gsap.to(glow, {
+                scale: 1.2,
+                opacity: 0.4,
+                duration: 2,
+                ease: 'sine.inOut',
+                repeat: -1,
+                yoyo: true
+            });
+        }
+
+        // Ring 1 - Pulse
+        const ring1 = logoWrapper.querySelector('.gsap-hero-ring-1');
+        if (ring1) {
+            gsap.from(ring1, {
+                scale: 0.5,
+                opacity: 0,
+                duration: 1,
+                delay: 1.2,
+                ease: 'back.out(2)'
+            });
+
+            gsap.to(ring1, {
+                scale: 1.1,
+                opacity: 0.3,
+                duration: 2.5,
+                ease: 'sine.inOut',
+                repeat: -1,
+                yoyo: true
+            });
+        }
+
+        // Ring 2 - Rotate continuously
+        const ring2 = logoWrapper.querySelector('.gsap-hero-ring-2');
+        if (ring2) {
+            gsap.from(ring2, {
+                scale: 0.5,
+                opacity: 0,
+                duration: 1,
+                delay: 1.4,
+                ease: 'back.out(2)'
+            });
+
+            gsap.to(ring2, {
+                rotation: 360,
+                duration: 20,
+                ease: 'none',
+                repeat: -1
+            });
+        }
+    }
+
+    // Apply animation to DESKTOP logo
+    if (window.innerWidth >= 1024) {
+        animateLogo('.gsap-hero-logo-wrapper');
+    }
+
+    // Apply animation to MOBILE logo
+    if (window.innerWidth < 1024) {
+        animateLogo('.gsap-hero-logo-wrapper-mobile');
+    }
+
+    // ==========================================
+    // HERO TEXT ANIMATIONS
+    // ==========================================
+    
+    // Animate each letter
+    const letters = gsap.utils.toArray('.gsap-hero-letter');
+    gsap.from(letters, {
+        y: 100,
+        opacity: 0,
+        rotation: 180,
+        duration: 0.8,
+        stagger: 0.05,
+        ease: 'back.out(1.7)'
+    });
+
+    // Divider line
+    gsap.from('.gsap-hero-divider', {
+        scaleX: 0,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: 'power3.out'
+    });
+
+    // Tagline
+    gsap.from('.gsap-hero-tagline', {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.7,
+        ease: 'power3.out'
+    });
+
+    // Buttons
+    gsap.from('.gsap-hero-btn-primary', {
+        x: -50,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.9,
+        ease: 'back.out(1.7)'
+    });
+
+    const secondaryBtn = document.querySelector('.gsap-hero-btn-secondary');
+    if (secondaryBtn) {
+        gsap.from(secondaryBtn, {
+            x: 50,
+            opacity: 0,
+            duration: 0.8,
+            delay: 1,
+            ease: 'back.out(1.7)'
+        });
+    }
+
+    // ==========================================
+    // SPARKLES ANIMATIONS
+    // ==========================================
+    
+    const heroSparkles = gsap.utils.toArray('.gsap-comp-sparkle');
+    heroSparkles.forEach((sparkle, index) => {
+        // Initial appearance
+        gsap.from(sparkle, {
+            scale: 0,
+            opacity: 0,
+            rotation: 360,
+            duration: 1,
+            delay: index * 0.15,
+            ease: 'back.out(1.5)'
+        });
+        
+        // Continuous rotation
+        gsap.to(sparkle, {
+            rotation: 360,
+            duration: 20 + (index * 3),
+            ease: 'none',
+            repeat: -1
+        });
+        
+        // Floating up and down
+        gsap.to(sparkle, {
+            y: -25 - (index * 5),
+            duration: 3 + (index * 0.5),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true
+        });
+        
+        // Slight horizontal movement
+        gsap.to(sparkle, {
+            x: (index % 2 === 0 ? 15 : -15),
+            duration: 4 + (index * 0.3),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: index * 0.2
+        });
+        
+        // Scale pulsing
+        gsap.to(sparkle, {
+            scale: 1.1,
+            duration: 2 + (index * 0.2),
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: index * 0.1
+        });
+    });
+
+    // ==========================================
+    // PALM SHADOWS
+    // ==========================================
+    
+    const palmRight = document.querySelector('.gsap-palm-right');
+    if (palmRight) {
+        gsap.to(palmRight, {
+            rotation: 3,
+            transformOrigin: 'top center',
+            duration: 5,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+    }
+
+    const palmLeft = document.querySelector('.gsap-palm-left');
+    if (palmLeft) {
+        gsap.to(palmLeft, {
+            rotation: -3,
+            transformOrigin: 'top center',
+            duration: 6,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+    }
+
+    // ==========================================
+    // WAVE ANIMATION
+    // ==========================================
+    
+    gsap.to('.wave-svg path', {
+        attr: { d: 'M0 0L60 15C120 30 240 50 360 53.7C480 57 600 43 720 40C840 37 960 43 1080 50C1200 57 1320 63 1380 66.3L1440 70V120H0V0Z' },
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+    });
+
+    // ==========================================
+    // BUTTON HOVER EFFECTS
+    // ==========================================
+    
+    const primaryBtn = document.querySelector('.gsap-hero-btn-primary');
+    if (primaryBtn) {
+        const arrow = primaryBtn.querySelector('.bounce-arrow');
+        if (arrow) {
+            primaryBtn.addEventListener('mouseenter', () => {
+                gsap.to(arrow, {
+                    x: 5,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+
+            primaryBtn.addEventListener('mouseleave', () => {
+                gsap.to(arrow, {
+                    x: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+        }
+    }
+
+    console.log('🎨 GSAP Hero Animations initialized!');
+    console.log('📱 Window width:', window.innerWidth);
+    console.log('🖼️ Mobile logo:', document.querySelector('.gsap-hero-logo-wrapper-mobile') ? 'Found' : 'Not found');
+    console.log('💻 Desktop logo:', document.querySelector('.gsap-hero-logo-wrapper') ? 'Found' : 'Not found');
+});
+</script>
+@endpush
