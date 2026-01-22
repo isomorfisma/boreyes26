@@ -6,10 +6,10 @@
     'description' => 'Paper and Poster Competition provides a platform for participants to address challenges in oil and gas processing through research-based ideas and innovations. The competition highlights key themes such as Upstream Digitalization, Industrial Decarbonization (including CCUS and methane abatement), and Energy Transition Synergy, encouraging solutions that support a sustainable and resilient energy future while enhancing critical thinking and problem-solving skills.',
     'status' => 'OPEN', // OPEN | CLOSED | COMING SOON
     'batch1_label' => 'Early Bird',
-    'batch1' => '1 Jan - 28 Feb 2025',
+    'batch1' => 'TBA',
     'batch2_label' => 'Regular',
-    'batch2' => '1 Mar - 15 Mar 2025',
-    'fee' => 'Rp 150.000',
+    'batch2' => 'TBA',
+    'fee' => 'TBA',
     'register_url' => route('register'),
     'booklet_url' => 'https://drive.google.com/your-paper-poster-booklet-link',
   ];

@@ -6,10 +6,10 @@
     'description' => 'Business Case Competition is a nationally and internationally recognized competition where teams or individual participants analyze and solve real-world business cases. Conducted in preliminary and final stages, the competition challenges participants to propose innovative, practical, and economically viable solutions with a strong focus on renewable energy, particularly the geothermal sector. Participants present their ideas professionally to judges and industry experts, emphasizing implementation, relevance, and minimal environmental impact to address current challenges in geothermal project development.',
     'status' => 'OPEN', // OPEN | CLOSED | COMING SOON
     'batch1_label' => 'Early Bird',
-    'batch1' => '1 Jan - 28 Feb 2025',
+    'batch1' => 'TBA',
     'batch2_label' => 'Regular',
-    'batch2' => '1 Mar - 15 Mar 2025',
-    'fee' => 'Rp 150.000',
+    'batch2' => 'TBA',
+    'fee' => 'TBA',
     'register_url' => route('register'),
     'booklet_url' => 'https://drive.google.com/your-bcc-booklet-link',
   ];
