@@ -6,10 +6,10 @@
     'description' => 'Plan of Development (POD) Competition challenges participants to design a comprehensive Field Development Plan using innovative reservoir management strategies. The competition emphasizes smart and sustainable hydrocarbon development by optimizing reservoir performance while considering technical, economic, and HSE aspects, and simulates real-world upstream decision-making.',
     'status' => 'OPEN', // OPEN | CLOSED | COMING SOON
     'batch1_label' => 'Early Bird',
-    'batch1' => '1 Jan - 28 Feb 2025',
+    'batch1' => 'TBA',
     'batch2_label' => 'Regular',
-    'batch2' => '1 Mar - 15 Mar 2025',
-    'fee' => 'Rp 150.000',
+    'batch2' => 'TBA',
+    'fee' => 'TBA',
     'register_url' => route('register'),
     'booklet_url' => 'https://drive.google.com/your-plan-of-development-booklet-link',
   ];
