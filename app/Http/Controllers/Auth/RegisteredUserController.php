@@ -27,6 +27,7 @@ class RegisteredUserController extends Controller
             'team_leader' => 'required|string|max:255',
             'team_member_1' => 'nullable|string|max:255',
             'team_member_2' => 'nullable|string|max:255',
+            'team_member_3' => 'nullable|string|max:255',
             'contact_number' => 'required|string|max:20',
             'university' => 'required|string|max:255',
             'competition_id' => 'required|exists:competitions,id',
