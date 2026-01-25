@@ -42,6 +42,7 @@ class RegisteredUserController extends Controller
             'team_leader' => $request->team_leader,
             'team_member_1' => $request->team_member_1,
             'team_member_2' => $request->team_member_2,
+            'team_member_3' => $request->team_member_3,
             'contact_number' => $request->contact_number,
             'university' => $request->university,
             'competition_id' => $request->competition_id,

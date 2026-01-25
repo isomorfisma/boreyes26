@@ -33,7 +33,7 @@
 <!-- Multi-Step Registration Form -->
 <div class="bg-[#F8FBFC] py-8 sm:py-12 lg:py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <form method="POST" action="{{ route('register') }}" x-data="registrationForm()" @submit.prevent="handleSubmit" class="space-y-6 sm:space-y-8">
+        <form method="POST" action="{{ route('register') }}" x-data="registrationForm()" @submit="handleSubmit" class="space-y-6 sm:space-y-8">
             @csrf
 
             <!-- Modern Progress Stepper -->
@@ -47,7 +47,7 @@
                             </svg>
                             <span x-show="step <= 1">1</span>
                         </div>
-                        <p class="text-xs font-helvetica font-bold" :class="step >= 1 ? 'text-[#0F4C82]' : 'text-gray-400'">Team Info</p>
+                        <p class="text-xs font-helvetica font-bold" :class="step >= 1 ? 'text-[#0F4C82]' : 'text-gray-400'">Competition</p>
                     </div>
 
                     <div class="flex-1 h-1 mx-2 sm:mx-4 rounded-full transition-all" :class="step >= 2 ? 'bg-gradient-to-r from-[#0F4C82] to-[#6F97B6]' : 'bg-gray-300'"></div>
@@ -60,7 +60,7 @@
                             </svg>
                             <span x-show="step <= 2">2</span>
                         </div>
-                        <p class="text-xs font-helvetica font-bold" :class="step >= 2 ? 'text-[#0F4C82]' : 'text-gray-400'">Competition</p>
+                        <p class="text-xs font-helvetica font-bold" :class="step >= 2 ? 'text-[#0F4C82]' : 'text-gray-400'">Team Info</p>
                     </div>
 
                     <div class="flex-1 h-1 mx-2 sm:mx-4 rounded-full transition-all" :class="step >= 3 ? 'bg-gradient-to-r from-[#8CCDCF] to-[#D3EB9F]' : 'bg-gray-300'"></div>
@@ -77,7 +77,7 @@
 
             <!-- Error Messages -->
             <div x-show="errors.length > 0" class="bg-red-50 border-2 border-red-200 rounded-xl p-4">
-                <h3 class="text-red-800 font-helvetica font-bold mb-2">Please fill the following errors:</h3>
+                <h3 class="text-red-800 font-helvetica font-bold mb-2">Please fix the following errors:</h3>
                 <ul class="list-disc list-inside text-sm text-red-600 space-y-1">
                     <template x-for="error in errors" :key="error">
                         <li x-text="error"></li>
@@ -85,10 +85,84 @@
                 </ul>
             </div>
 
-            <!-- Step 1: Team Information -->
+            <!-- Step 1: Competition Selection -->
             <div x-show="step === 1" x-transition class="space-y-4">
                 <div class="bg-white rounded-xl shadow-xl p-6 border-2 border-[#D3EB9F]/30">
-                    <h2 class="text-2xl font-helvetica font-black text-[#0F4C82] mb-6">Team Information</h2>
+                    <h2 class="text-2xl font-helvetica font-black text-[#0F4C82] mb-6">Choose Your Competition</h2>
+
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold text-gray-700 mb-3 font-helvetica">
+                            Select Competition <span class="text-red-500">*</span>
+                        </label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            @php
+                                $competitions = \App\Models\Competition::all();
+                            @endphp
+
+                            @foreach($competitions as $competition)
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="competition_id" x-model="formData.competition_id" value="{{ $competition->id }}" 
+                                       @change="onCompetitionChange({{ $competition->id }}, '{{ $competition->name }}')"
+                                       class="peer sr-only">
+                                <div class="bg-white border-2 border-gray-200 rounded-xl p-4 transition-all hover:border-[#6F97B6] peer-checked:border-[#D3EB9F] peer-checked:bg-[#D3EB9F]/10 peer-checked:ring-2 peer-checked:ring-[#D3EB9F]/40">
+                                    <h3 class="text-lg font-helvetica font-black text-[#0F4C82] mb-2">{{ $competition->name }}</h3>
+                                    <p class="text-sm text-gray-600 font-garet mb-3">{{ $competition->description }}</p>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <svg class="w-4 h-4 text-[#6F97B6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                        </svg>
+                                        <span class="text-xs font-helvetica font-bold text-[#0F4C82]">
+                                            @if(strtolower($competition->name) === 'plan of development' || str_contains(strtolower($competition->name), 'pod'))
+                                                4 Members (including leader)
+                                            @else
+                                                3 Members (including leader)
+                                            @endif
+                                        </span>
+                                    </div>
+                                    @if($competition->guidebook)
+                                    <a href="{{ $competition->guidebook }}" target="_blank" onclick="event.stopPropagation()"
+                                       class="inline-block px-4 py-2 bg-[#0F4C82] text-white text-xs font-helvetica font-bold rounded-lg hover:bg-[#6F97B6] transition-all">
+                                        Registration Booklet
+                                    </a>
+                                    @endif
+                                </div>
+                            </label>
+                            @endforeach
+                        </div>
+                        @error('competition_id')
+                        <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-4">
+                        <p class="text-sm text-blue-700 font-garet mb-2"><strong>Team Member Requirements:</strong></p>
+                        <ul class="text-xs text-blue-600 space-y-1">
+                            <li>• <strong>Smart Competition, Paper & Poster, Business Case, Case Study:</strong> 3 members (1 leader + 2 members)</li>
+                            <li>• <strong>Plan of Development (POD):</strong> 4 members (1 leader + 3 members)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <button type="button" @click="validateAndGoToStep2()" 
+                            class="px-8 py-4 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
+                        Next: Team Information
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Team Information -->
+            <div x-show="step === 2" x-transition class="space-y-4">
+                <div class="bg-white rounded-xl shadow-xl p-6 border-2 border-[#D3EB9F]/30">
+                    <h2 class="text-2xl font-helvetica font-black text-[#0F4C82] mb-2">Team Information</h2>
+                    <div x-show="selectedCompetitionName" class="mb-6">
+                        <div class="inline-flex items-center gap-2 bg-[#D3EB9F]/20 px-4 py-2 rounded-lg">
+                            <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-sm font-helvetica font-bold text-[#0F4C82]">Competition: <span x-text="selectedCompetitionName"></span></span>
+                        </div>
+                    </div>
 
                     <div class="space-y-4">
                         <div>
@@ -96,7 +170,7 @@
                                 Team Name <span class="text-red-500">*</span>
                             </label>
                             <input id="team_name" type="text" name="team_name" x-model="formData.team_name" value="{{ old('team_name') }}" 
-                                   placeholder="Enter team name"
+                                   placeholder="Enter your team name"
                                    class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_name') border-red-400 @enderror">
                             @error('team_name')
                             <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
@@ -116,7 +190,9 @@
                         </div>
 
                         <div class="bg-gray-50 rounded-xl p-4 border-2 border-gray-200">
-                            <h3 class="text-sm font-helvetica font-black text-[#0F4C82] mb-3">Team Members (2 People)</h3>
+                            <h3 class="text-sm font-helvetica font-black text-[#0F4C82] mb-3">
+                                Team Members (<span x-text="isPODCompetition ? '3 People' : '2 People'"></span>)
+                            </h3>
                             
                             <div class="space-y-3">
                                 <div>
@@ -139,6 +215,19 @@
                                            placeholder="Full name of member 2"
                                            class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_member_2') border-red-400 @enderror">
                                     @error('team_member_2')
+                                    <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
+                                    @enderror
+                                </div>
+
+                                <!-- Member 3 - Only for POD -->
+                                <div x-show="isPODCompetition" x-transition>
+                                    <label for="team_member_3" class="block text-sm font-semibold text-gray-700 mb-2 font-helvetica">
+                                        Member 3 <span class="text-red-500">*</span>
+                                    </label>
+                                    <input id="team_member_3" type="text" name="team_member_3" x-model="formData.team_member_3" value="{{ old('team_member_3') }}" 
+                                        placeholder="Full name of member 3"
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_member_3') border-red-400 @enderror">
+                                    @error('team_member_3')
                                     <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                                     @enderror
                                 </div>
@@ -227,63 +316,15 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="flex justify-end">
-                    <button type="button" @click="validateAndGoToStep2()" 
-                            class="px-8 py-4 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
-                        Next
-                    </button>
-                </div>
-            </div>
-
-            <!-- Step 2: Competition Selection -->
-            <div x-show="step === 2" x-transition class="space-y-4">
-                <div class="bg-white rounded-xl shadow-xl p-6 border-2 border-[#D3EB9F]/30">
-                    <h2 class="text-2xl font-helvetica font-black text-[#0F4C82] mb-6">Choose Competition & Upload Files</h2>
-
-                    <div class="mb-6">
-                        <label class="block text-sm font-semibold text-gray-700 mb-3 font-helvetica">
-                            Select Competition <span class="text-red-500">*</span>
-                        </label>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            @php
-                                $competitions = \App\Models\Competition::all();
-                            @endphp
-
-                            @foreach($competitions as $competition)
-                            <label class="relative cursor-pointer">
-                                <input type="radio" name="competition_id" x-model="formData.competition_id" value="{{ $competition->id }}" class="peer sr-only">
-                                <div class="bg-white border-2 border-gray-200 rounded-xl p-4 transition-all hover:border-[#6F97B6] peer-checked:border-[#D3EB9F] peer-checked:bg-[#D3EB9F]/10 peer-checked:ring-2 peer-checked:ring-[#D3EB9F]/40">
-                                    <h3 class="text-lg font-helvetica font-black text-[#0F4C82] mb-2">{{ $competition->name }}</h3>
-                                    <p class="text-sm text-gray-600 font-garet mb-3">{{ $competition->description }}</p>
-                                    @if($competition->guidebook)
-                                    <a href="{{ $competition->guidebook }}" target="_blank" onclick="event.stopPropagation()"
-                                       class="inline-block px-4 py-2 bg-[#0F4C82] text-white text-xs font-helvetica font-bold rounded-lg hover:bg-[#6F97B6] transition-all">
-                                        Registration Booklet
-                                    </a>
-                                    @endif
-                                </div>
-                            </label>
-                            @endforeach
+                        <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-4">
+                            <p class="text-sm text-blue-700 font-garet mb-2"><strong>How to Upload:</strong></p>
+                            <ol class="list-decimal list-inside text-xs text-blue-600 space-y-1">
+                                <li>Upload file to Google Drive</li>
+                                <li>Right click → Share → "Anyone with the link"</li>
+                                <li>Copy link and paste in form</li>
+                            </ol>
                         </div>
-                        @error('competition_id')
-                        <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
-                        @enderror
-                    </div>
-
-                    <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-4 mb-6">
-                        <p class="text-sm text-blue-700 font-garet mb-2"><strong>How to Upload:</strong></p>
-                        <ol class="list-decimal list-inside text-xs text-blue-600 space-y-1">
-                            <li>Upload file to Google Drive</li>
-                            <li>Right click → Share → "Anyone with the link"</li>
-                            <li>Copy link and paste in form</li>
-                        </ol>
-                    </div>
-
-                    <div class="space-y-4">
-                       
 
                         <div>
                             <label for="link_drive_payment" class="block text-sm font-semibold text-gray-700 mb-2 font-helvetica">
@@ -395,30 +436,65 @@
 }
 </style>
 @endpush
-
 @push('scripts')
 <script>
 function registrationForm() {
     return {
         step: 1,
         errors: [],
+        isPODCompetition: false,
+        selectedCompetitionName: '',
         formData: {
             team_name: '{{ old('team_name') }}',
             team_leader: '{{ old('team_leader') }}',
             team_member_1: '{{ old('team_member_1') }}',
             team_member_2: '{{ old('team_member_2') }}',
+            team_member_3: '{{ old('team_member_3') }}',
             university: '{{ old('university') }}',
             contact_number: '{{ old('contact_number') }}',
             email: '{{ old('email') }}',
             password: '',
             password_confirmation: '',
             competition_id: '{{ old('competition_id') }}',
-           
             link_drive_payment: '{{ old('link_drive_payment') }}',
             terms: false
         },
         
+        init() {
+            // Check if there's old competition_id on page load (after validation error)
+            if (this.formData.competition_id) {
+                const selectedRadio = document.querySelector(`input[name="competition_id"][value="${this.formData.competition_id}"]`);
+                if (selectedRadio) {
+                    const competitionCard = selectedRadio.closest('label');
+                    const competitionName = competitionCard.querySelector('h3').textContent;
+                    this.onCompetitionChange(this.formData.competition_id, competitionName);
+                }
+            }
+        },
+        
+        onCompetitionChange(competitionId, competitionName) {
+            this.selectedCompetitionName = competitionName;
+            
+            const competitionNameLower = competitionName.toLowerCase();
+            this.isPODCompetition = competitionNameLower.includes('plan of development') || 
+                                   competitionNameLower.includes('pod');
+            
+            if (!this.isPODCompetition) {
+                this.formData.team_member_3 = '';
+            }
+        },
+        
         validateStep1() {
+            this.errors = [];
+            
+            if (!this.formData.competition_id) {
+                this.errors.push('Please select a competition');
+            }
+            
+            return this.errors.length === 0;
+        },
+        
+        validateStep2() {
             this.errors = [];
             
             if (!this.formData.team_name || this.formData.team_name.trim() === '') {
@@ -433,6 +509,11 @@ function registrationForm() {
             if (!this.formData.team_member_2 || this.formData.team_member_2.trim() === '') {
                 this.errors.push('Member 2 name is required');
             }
+            
+            if (this.isPODCompetition && (!this.formData.team_member_3 || this.formData.team_member_3.trim() === '')) {
+                this.errors.push('Member 3 is required for Plan of Development competition');
+            }
+            
             if (!this.formData.university || this.formData.university.trim() === '') {
                 this.errors.push('University name is required');
             }
@@ -450,17 +531,6 @@ function registrationForm() {
             if (this.formData.password !== this.formData.password_confirmation) {
                 this.errors.push('Password confirmation does not match');
             }
-            
-            return this.errors.length === 0;
-        },
-        
-        validateStep2() {
-            this.errors = [];
-            
-            if (!this.formData.competition_id) {
-                this.errors.push('Please select a competition');
-            }
-          
             if (!this.formData.link_drive_payment || this.formData.link_drive_payment.trim() === '') {
                 this.errors.push('Payment proof link is required');
             } else if (!this.isValidUrl(this.formData.link_drive_payment)) {
@@ -499,12 +569,22 @@ function registrationForm() {
         },
         
         handleSubmit(e) {
+            e.preventDefault();
+            
             if (!this.validateStep1() || !this.validateStep2() || !this.validateStep3()) {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 return false;
             }
             
-            // Submit form
+            // Manually set the value of team_member_3 field before submit
+            const member3Input = document.getElementById('team_member_3');
+            if (this.isPODCompetition && member3Input) {
+                member3Input.value = this.formData.team_member_3;
+            } else if (!this.isPODCompetition && member3Input) {
+                member3Input.value = '';
+            }
+            
+            // Now submit the form
             e.target.submit();
         },
         

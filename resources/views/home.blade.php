@@ -909,7 +909,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 1</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">4 Maret 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">4th March 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Companies Talks</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
