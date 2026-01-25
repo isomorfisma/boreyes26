@@ -134,19 +134,13 @@
                         @enderror
                     </div>
 
-                    <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-4">
-                        <p class="text-sm text-blue-700 font-garet mb-2"><strong>Team Member Requirements:</strong></p>
-                        <ul class="text-xs text-blue-600 space-y-1">
-                            <li>• <strong>Smart Competition, Paper & Poster, Business Case, Case Study:</strong> 3 members (1 leader + 2 members)</li>
-                            <li>• <strong>Plan of Development (POD):</strong> 4 members (1 leader + 3 members)</li>
-                        </ul>
-                    </div>
+                   
                 </div>
 
                 <div class="flex justify-end">
                     <button type="button" @click="validateAndGoToStep2()" 
                             class="px-8 py-4 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
-                        Next: Team Information
+                        Next
                     </button>
                 </div>
             </div>
