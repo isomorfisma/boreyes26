@@ -6,9 +6,9 @@
     'description' => 'Case Study Competition is a solution-based competition that challenges participants to analyze real-world problems in the oil and gas industry. Participants are required to conduct research and propose innovative, practical solutions through creative thinking, thorough analysis, and compelling presentations. The competition emphasizes real-world applicability, with solutions designed to address common challenges in upstream oil and gas operations, particularly in production processes and surface facility performance.',
     'status' => 'OPEN', // OPEN | CLOSED | COMING SOON
     'batch1_label' => 'Early Bird',
-    'batch1' => 'TBA',
-    'batch2_label' => 'Regular',
-    'batch2' => 'TBA',
+    'batch1' => '22 - 28 February 2026',
+    'batch2_label' => 'Normal',
+    'batch2' => '1 - 14 March 2026',
     'fee' => 'TBA',
     'register_url' => route('register'),
     'booklet_url' => 'https://drive.google.com/your-case-study-booklet-link',

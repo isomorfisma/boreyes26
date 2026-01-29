@@ -313,29 +313,29 @@
                             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#0F4C82]/20 to-transparent rounded-bl-full"></div>
                             
                             <div class="relative h-full flex flex-col p-8 sm:p-10">
-                                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-2xl mb-6 shadow-lg">
+                                <!-- <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-2xl mb-6 shadow-lg">
                                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                                     </svg>
-                                </div>
+                                </div> -->
                                 
                                 <h3 class="text-2xl sm:text-3xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4">
-                                    Logo Name 2026
+                                    Boreyes 2026
                                 </h3>
                                 
-                                <p class="text-sm sm:text-base text-[#0F4C82]/90 font-garet leading-relaxed mb-6 flex-grow">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                <p class="text-sm sm:text-base text-[#0F4C82]/90 font-garet leading-relaxed mb-6 flex-grow text-justify">
+                                    The Boreyes logo captures the energy of innovation and competition. The blue, green, yellow palette reflects the connection between energy, nature, and future potential. The oil rig represents the energy industry, the gear symbolizes growth and progress, the leaves highlight sustainability, and the flame embodies passion, drive, and the competitive spirit that fuels Boreyes.
                                 </p>
                                 
                                 <div class="flex items-center justify-between pt-4 border-t-2 border-[#0F4C82]/20">
                                     <div class="flex items-center space-x-2">
                                         <div class="w-3 h-3 rounded-full bg-[#0F4C82] shadow-lg"></div>
-                                        <span class="text-sm text-[#0F4C82] font-garet font-bold">Official Logo 2026</span>
+                                        <span class="text-sm text-[#0F4C82] font-garet font-bold">Official Logo Boreyes 2026</span>
                                     </div>
                                     <button class="text-[#0F4C82]/70 hover:text-[#0F4C82] transition-colors">
-                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <!-- <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                        </svg>
+                                        </svg> -->
                                     </button>
                                 </div>
                             </div>
@@ -364,9 +364,9 @@
                                 <div class="absolute bottom-6 left-0 right-0 flex justify-center">
                                     <div class="flex items-center space-x-2 text-white/80 text-sm bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
                                         <span class="font-garet">Click for details</span>
-                                        <svg class="w-4 h-4 bounce-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <!-- <svg class="w-4 h-4 bounce-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg>
+                                        </svg> -->
                                     </div>
                                 </div>
                             </div>
@@ -380,31 +380,31 @@
                             <div class="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[#0F4C82]/20 to-transparent rounded-tr-full"></div>
                             
                             <div class="relative h-full flex flex-col p-8 sm:p-10">
-                                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-2xl mb-6 shadow-lg">
+                                <!-- <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-2xl mb-6 shadow-lg">
                                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                                     </svg>
-                                </div>
+                                </div> -->
                                 
                                 <h3 class="text-2xl sm:text-3xl font-helvetica font-black tracking-tighter text-[#0F4C82] mb-4">
-                                    Mascot Name
+                                    GlobeEyes
                                 </h3>
                                 
                                 <p class="text-sm sm:text-base text-[#0F4C82]/90 font-garet leading-relaxed mb-6 flex-grow">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                    GlobeEyes is the cheerful and curious mascot who sees the world through the lens of innovation. With his big bright eyes and trusty hard hat, he’s always ready to explore challenges and turn them into smarter, cleaner energy solutions. GlobeEyes reminds us to keep our vision wide open, think creatively, and work together for a brighter energy future.
                                 </p>
                                 
                                 <div class="flex items-center justify-between pt-4 border-t-2 border-[#0F4C82]/20">
                                     <div class="flex items-center space-x-2">
                                         <div class="w-3 h-3 rounded-full bg-[#0F4C82] shadow-lg"></div>
-                                        <span class="text-sm text-[#0F4C82] font-garet font-bold">Official Mascot 2026</span>
+                                        <span class="text-sm text-[#0F4C82] font-garet font-bold">GlobeEyes</span>
                                     </div>
-                                    <button class="text-[#0F4C82]/70 hover:text-[#0F4C82] transition-colors">
+                                    <!-- <button class="text-[#0F4C82]/70 hover:text-[#0F4C82] transition-colors">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                                         </svg>
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                         </div>
@@ -416,7 +416,7 @@
     </div>
 </section>
     
-<!-- Team Profile - FINAL VERSION -->
+<!-- Team Profile - FINAL VERSION WITH LARGER PNG ICONS -->
 <section id="team-profile" class="py-16 sm:py-20 bg-white scroll-mt-20 relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-[#0F4C82]/5 via-transparent to-[#D3EB9F]/5"></div>
     <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(15,76,130,0.05) 1px, transparent 0); background-size: 40px 40px;"></div>
@@ -440,14 +440,12 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-xl p-4 shadow-2xl">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50">
-                                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50 overflow-hidden">
+                                 <img src="{{ asset('assets/img/PROJECT_OFFICER_FARREL_ATHAYA.jpg') }}" alt="PO" class="w-full h-full object-cover">
                             </div>
                             <div>
-                                <p class="text-xs uppercase text-[#D3EB9F] font-helvetica font-bold">PO</p>
-                                <h3 class="text-base font-helvetica font-black text-white">Project Officer</h3>
+                                <p class="text-xs uppercase text-[#D3EB9F] font-helvetica font-bold">Project Officer</p>
+                                <h3 class="text-base font-helvetica font-black text-white">Farrel Athaya</h3>
                             </div>
                         </div>
                     </div>
@@ -457,13 +455,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-gradient-to-br from-[#6F97B6] to-[#8CCDCF] rounded-xl p-4 shadow-2xl">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50">
-                               <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50 overflow-hidden">
+                               <img src="{{ asset('assets/img/SUPERVISOR.jpg') }}" alt="SV" class="w-full h-full object-cover">
                             </div>
                             <div>
-                                <p class="text-xs uppercase text-white/90 font-helvetica font-bold">SV</p>
+                                <p class="text-xs uppercase text-white/90 font-helvetica font-bold">Supervisor</p>
                                 <h3 class="text-base font-helvetica font-black text-white">Supervisor</h3>
                             </div>
                         </div>
@@ -493,13 +489,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                               <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                               <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_RAFAEL_ANTONIO.jpg') }}" alt="VPO 1" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 1</p>
-                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">VPO 1</h4>
+                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Rafael Antonio</h4>
                         </div>
                     </div>
                 </div>
@@ -509,13 +503,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                                <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_TARAKA_AMAR.jpg') }}" alt="VPO 2" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 2</p>
-                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">VPO 2</h4>
+                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Taraka Amar</h4>
                         </div>
                     </div>
                 </div>
@@ -525,13 +517,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                                <img src="{{ asset('assets/img/TREASURER_NAILAH_AZ-ZAHRA.jpg') }}" alt="Treasurer" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Treasurer</p>
-                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Treasurer 1&2</h4>
+                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Nailah Az-Zahra</h4>
                         </div>
                     </div>
                 </div>
@@ -541,13 +531,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                                <img src="{{ asset('assets/img/SECRETARY_ZALFA_KHAIRUNNISA.jpg') }}" alt="Secretary" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Secretary</p>
-                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Secretary 1&2</h4>
+                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Zalfa Khairunnisa</h4>
                         </div>
                     </div>
                 </div>
@@ -574,9 +562,8 @@
                 <!-- CENTER LINE (50%) straight to Operational (62.5%) -->
                 <div class="absolute left-[50%] top-0 w-0.5 h-8 bg-[#D3EB9F]"></div>
                 <div class="absolute left-[50%] top-8 w-[17.5%] h-0.5 bg-[#D3EB9F]"></div>
-                <div class="absolute left-[67.5%] top-8 w-0.5 h-[18px] bg-[#D3EB9F]"></div>
-
-                                    
+                <div class="absolute left-[67.5%] top-8 w-0.5 h-[16px] bg-[#D3EB9F]"></div>
+  
                 <!-- Treasurer (62.5%) straight to Fundraising (82%) -->
                 <div class="absolute left-[62.5%] top-0 w-0.5 h-5 bg-[#D3EB9F]"></div>
                 <div class="absolute left-[62.5%] top-5 w-[28%] h-0.5 bg-[#D3EB9F]"></div> 
@@ -590,13 +577,11 @@
                 <div class="w-[16%] group relative scroll-reveal" style="margin-left: 0; --reveal-delay: 0.7s;">
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
-                        <div class="w-8 h-8 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                            <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                        <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                            <img src="{{ asset('assets/img/INTERNAL_AZQIATUL_TSABITAH.jpg') }}" alt="Internal" class="w-full h-full object-cover">
                         </div>
                         <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Internal</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Azqiatul Tsabitah</p>
                     </div>
                 </div>
 
@@ -604,13 +589,11 @@
                 <div class="w-[16%] group relative scroll-reveal" style="--reveal-delay: 0.8s;">
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
-                        <div class="w-8 h-8 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                           <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                        <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                           <img src="{{ asset('assets/img/COMPETITION_RAIHAN_SHAIB.png') }}" alt="Competition" class="w-full h-full object-cover">
                         </div>
                         <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Competition</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Raihan Shaib</p>
                     </div>
                 </div>
 
@@ -618,13 +601,11 @@
                 <div class="w-[16%] group relative md:translate-x-14 scroll-reveal" style="--reveal-delay: 0.9s;">
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
-                        <div class="w-8 h-8 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                            <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                        <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                            <img src="{{ asset('assets/img/EXTERNAL_MICHAEL_FATURIN.jpg') }}" alt="External" class="w-full h-full object-cover">
                         </div>
                         <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">External</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Michael Faturin</p>
                     </div>
                 </div>
 
@@ -633,13 +614,11 @@
                     <div class="scroll-reveal" style="--reveal-delay: 1s;">
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
-                        <div class="w-8 h-8 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                            <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                            </svg>
+                        <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                            <img src="{{ asset('assets/img/OPERASIONAL_DANISH_MUHAMMAD.jpg') }}" alt="Operational" class="w-full h-full object-cover">
                         </div>
                         <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Operational</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Danish Muhammad</p>
                     </div>
                     </div>
                 </div>
@@ -649,13 +628,11 @@
                  <div class="scroll-reveal" style="--reveal-delay: 1.1s;">
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
-                        <div class="w-8 h-8 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                           <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                            </svg>
+                        <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                           <img src="{{ asset('assets/img/FINANCE_ANNETA_FAUZIA.jpg') }}" alt="Fundraising" class="w-full h-full object-cover">
                         </div>
                         <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Fundraising</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Anneta Fauzia</p>
                     </div>
                     </div>
                 </div>
@@ -670,14 +647,12 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] rounded-xl blur opacity-30"></div>
                     <div class="relative bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-xl p-4 shadow-2xl">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50 overflow-hidden">
+                                <img src="{{ asset('assets/img/PROJECT_OFFICER_FARREL_ATHAYA.jpg') }}" alt="PO" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <p class="text-xs uppercase text-[#D3EB9F] font-helvetica font-bold">PO</p>
-                                <h3 class="text-base font-helvetica font-black text-white">Project Officer</h3>
+                                <h3 class="text-base font-helvetica font-black text-white">Farrel Athaya</h3>
                             </div>
                         </div>
                     </div>
@@ -687,10 +662,8 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] rounded-xl blur opacity-30"></div>
                     <div class="relative bg-gradient-to-br from-[#6F97B6] to-[#8CCDCF] rounded-xl p-4 shadow-2xl">
                         <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50">
-                                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50 overflow-hidden">
+                                 <img src="{{ asset('assets/img/SUPERVISOR.jpg') }}" alt="SV" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <p class="text-xs uppercase text-white/90 font-helvetica font-bold">SV</p>
@@ -712,13 +685,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                              <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                              <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_RAFAEL_ANTONIO.jpg') }}" alt="VPO 1" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 1</p>
-                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">VPO 1</h4>
+                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Rafael Antonio</h4>
                         </div>
                     </div>
                 </div>
@@ -727,13 +698,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                                <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_TARAKA_AMAR.jpg') }}" alt="VPO 2" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 2</p>
-                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">VPO 2</h4>
+                            <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Taraka Amar</h4>
                         </div>
                     </div>
                 </div>
@@ -742,13 +711,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                               <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                               <img src="{{ asset('assets/img/TREASURER_NAILAH_AZ-ZAHRA.jpg') }}" alt="Treasurer" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Treasurer</p>
-                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Treasurer 1&2</h4>
+                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Nailah Az-Zahra</h4>
                         </div>
                     </div>
                 </div>
@@ -757,13 +724,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] rounded-xl blur opacity-30"></div>
                     <div class="relative bg-gradient-to-br from-[#8CCDCF] to-[#D6EBDF] rounded-xl p-3 shadow-xl">
                         <div class="text-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2">
-                                 <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
+                                 <img src="{{ asset('assets/img/SECRETARY_ZALFA_KHAIRUNNISA.jpg') }}" alt="Secretary" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Secretary</p>
-                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Secretary 1&2</h4>
+                            <h4 class="text-xs font-helvetica font-black text-[#0F4C82]">Zalfa Khairunnisa</h4>
                         </div>
                     </div>
                 </div>
@@ -778,13 +743,11 @@
             <div class="group relative max-w-xs mx-auto scroll-reveal" style="--reveal-delay: 0.7s;">
                 <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                 <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                    <div class="w-10 h-10 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                         <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                         </svg>
+                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                         <img src="{{ asset('assets/img/OPERASIONAL_DANISH_MUHAMMAD.jpg') }}" alt="Operational" class="w-full h-full object-cover">
                     </div>
                     <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Operational</p>
-                    <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                    <p class="text-xs text-[#6B7280] font-garet text-center">Danish Muhammad</p>
                 </div>
             </div>
 
@@ -801,26 +764,22 @@
                         <div class="group relative scroll-reveal" style="--reveal-delay: 0.8s;">
                             <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                             <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                                <div class="w-10 h-10 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                                <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                <img src="{{ asset('assets/img/INTERNAL_AZQIATUL_TSABITAH.jpg') }}" alt="Internal" class="w-full h-full object-cover">
                                 </div>
                                 <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Internal</p>
-                                <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                                <p class="text-xs text-[#6B7280] font-garet text-center">Azqiatul Tsabitah</p>
                             </div>
                         </div>
 
                         <div class="group relative scroll-reveal" style="--reveal-delay: 0.9s;">
                             <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                             <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                                <div class="w-10 h-10 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                                    <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                    </svg>
+                                <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                    <img src="{{ asset('assets/img/COMPETITION_RAIHAN_SHAIB.png') }}" alt="Competition" class="w-full h-full object-cover">
                                 </div>
                                 <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Competition</p>
-                                <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                                <p class="text-xs text-[#6B7280] font-garet text-center">Raihan Shaib</p>
                             </div>
                         </div>
                     </div>
@@ -836,13 +795,11 @@
                     <div class="group relative max-w-xs mx-auto scroll-reveal" style="--reveal-delay: 1s;">
                         <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                         <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                            <div class="w-10 h-10 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                <img src="{{ asset('assets/img/EXTERNAL_MICHAEL_FATURIN.jpg') }}" alt="External" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">External</p>
-                            <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                            <p class="text-xs text-[#6B7280] font-garet text-center">Michael Faturin</p>
                         </div>
                     </div>
                 </div>
@@ -857,13 +814,11 @@
                     <div class="group relative max-w-xs mx-auto scroll-reveal" style="--reveal-delay: 1.1s;">
                         <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                         <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                            <div class="w-10 h-10 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto">
-                                <svg class="w-5 h-5 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                </svg>
+                            <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                <img src="{{ asset('assets/img/FINANCE_ANNETA_FAUZIA.jpg') }}" alt="Fundraising" class="w-full h-full object-cover">
                             </div>
                             <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Fundraising</p>
-                            <p class="text-xs text-[#6B7280] font-garet text-center">Name</p>
+                            <p class="text-xs text-[#6B7280] font-garet text-center">Anneta Fauzia</p>
                         </div>
                     </div>
                 </div>

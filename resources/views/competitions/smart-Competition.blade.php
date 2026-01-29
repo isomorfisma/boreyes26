@@ -6,9 +6,9 @@
     'description' => 'Smart Competition is an academic quiz competition focused on energy, oil and gas, and sustainability issues. It aims to sharpen participants’ critical thinking and problem-solving skills while enhancing their understanding of current and future challenges in the energy sector. Through engaging and competitive rounds, Smart Competition encourages students to build awareness toward a sustainable and resilient energy future.',
     'status' => 'OPEN', // OPEN | CLOSED | COMING SOON
     'batch1_label' => 'Early Bird',
-    'batch1' => 'TBA',
-    'batch2_label' => 'Regular',
-    'batch2' => 'TBA',
+    'batch1' => '22 - 28 February 2026',
+    'batch2_label' => 'Normal',
+    'batch2' => '1 - 14 March 2026',
     'fee' => 'TBA',
     'register_url' => route('register'),
     'booklet_url' => 'https://drive.google.com/your-smart-competition-booklet-link',

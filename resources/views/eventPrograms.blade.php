@@ -111,7 +111,7 @@
                 <div class="relative group magnetic-card">
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/company_talks.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
@@ -181,7 +181,7 @@
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
                             <!-- Placeholder Image - Ganti dengan gambar asli nanti -->
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/csr.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
@@ -252,7 +252,7 @@
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
                             <!-- Placeholder Image - Ganti dengan gambar asli nanti -->
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/field_trip.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
@@ -324,7 +324,7 @@
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
                             <!-- Placeholder Image - Ganti dengan gambar asli nanti -->
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/ignite_talks.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
@@ -394,7 +394,7 @@
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
                             <!-- Placeholder Image - Ganti dengan gambar asli nanti -->
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/competition.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
@@ -466,7 +466,7 @@
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
                             <!-- Placeholder Image - Ganti dengan gambar asli nanti -->
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/fun_day.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
@@ -538,7 +538,7 @@
                     <div class="relative bg-gradient-to-br from-[#0F4C82]/10 via-[#6F97B6]/10 to-[#8CCDCF]/10 p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl transform group-hover:scale-[1.02] transition-all duration-500">
                         <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-lg sm:shadow-xl" style="aspect-ratio: 4/3;">
                             <!-- Placeholder Image - Ganti dengan gambar asli nanti -->
-                            <img src="{{ asset('assets/img/kebun.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/event/banquet.jpg') }}" alt="Field Visit" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -top-1.5 -left-1.5 sm:-top-2 sm:-left-2 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 sm:border-t-4 sm:border-l-4 border-[#D3EB9F] rounded-tl-xl sm:rounded-tl-2xl corner-tl"></div>
                         <div class="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 sm:border-b-4 sm:border-r-4 border-[#D3EB9F] rounded-br-xl sm:rounded-br-2xl corner-br"></div>
