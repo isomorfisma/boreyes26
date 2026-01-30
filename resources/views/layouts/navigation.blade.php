@@ -384,7 +384,9 @@
                                     hover:bg-gradient-to-r hover:from-[#C5E6C9]/20 hover:to-[#D3EB9F]/20
                                     {{ request()->is('dashboard*', 'admin/dashboard*') ? 'bg-gradient-to-r from-[#C5E6C9]/30 to-[#D3EB9F]/30' : '' }}">
                                     <div class="w-8 h-8 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-full flex items-center justify-center shadow-md">
-                                        <span class="text-white text-xs font-black font-helvetica">U</span>
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                                        </svg>
                                     </div>
                                     <span class="text-sm text-[#0F4C82] font-semibold font-garet">{{ auth()->user()->team_name }}</span>
                                     <svg class="w-4 h-4 text-[#6B7280]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
