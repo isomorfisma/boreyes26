@@ -1,0 +1,72 @@
+[30-Jan-2026 06:55:59 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:55:59 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:55:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:02 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:02 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:03 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:03 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:03 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:03 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:04 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:04 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:05 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:05 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:05 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:05 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:06 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:06 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:12 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:12 UTC] PHP Warning:  require(/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14
+[30-Jan-2026 06:56:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcbinjcn/public_html/dev-boreyes2026/public/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/mcbinjcn/public_html/dev-boreyes2026/public/index.php on line 14

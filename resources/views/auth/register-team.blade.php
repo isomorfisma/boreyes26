@@ -1,6 +1,6 @@
 @extends('layouts.guest')
 
-@section('title', 'Register - BOREYES 2026')
+@section('title', 'Register')
 
 @section('content')
 <!-- Registration Hero Section with Wave -->
@@ -75,16 +75,6 @@
                 </div>
             </div>
 
-            <!-- Error Messages -->
-            <div x-show="errors.length > 0" class="bg-red-50 border-2 border-red-200 rounded-xl p-4">
-                <h3 class="text-red-800 font-helvetica font-bold mb-2">Please fix the following errors:</h3>
-                <ul class="list-disc list-inside text-sm text-red-600 space-y-1">
-                    <template x-for="error in errors" :key="error">
-                        <li x-text="error"></li>
-                    </template>
-                </ul>
-            </div>
-
             <!-- Step 1: Competition Selection -->
             <div x-show="step === 1" x-transition class="space-y-4">
                 <div class="bg-white rounded-xl shadow-xl p-6 border-2 border-[#D3EB9F]/30">
@@ -94,7 +84,7 @@
                         <label class="block text-sm font-semibold text-gray-700 mb-3 font-helvetica">
                             Select Competition <span class="text-red-500">*</span>
                         </label>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" :class="{'ring-2 ring-red-400 rounded-xl p-2': validationErrors.competition_id}">
                             @php
                                 $competitions = \App\Models\Competition::all();
                             @endphp
@@ -133,8 +123,6 @@
                         <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
-
-                   
                 </div>
 
                 <div class="flex justify-end">
@@ -165,7 +153,8 @@
                             </label>
                             <input id="team_name" type="text" name="team_name" x-model="formData.team_name" value="{{ old('team_name') }}" 
                                    placeholder="Enter your team name"
-                                   class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_name') border-red-400 @enderror">
+                                   class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                   :class="validationErrors.team_name ? 'border-red-400' : 'border-gray-200'">
                             @error('team_name')
                             <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -177,7 +166,8 @@
                             </label>
                             <input id="team_leader" type="text" name="team_leader" x-model="formData.team_leader" value="{{ old('team_leader') }}" 
                                    placeholder="Full name of team leader"
-                                   class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_leader') border-red-400 @enderror">
+                                   class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                   :class="validationErrors.team_leader ? 'border-red-400' : 'border-gray-200'">
                             @error('team_leader')
                             <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -195,7 +185,8 @@
                                     </label>
                                     <input id="team_member_1" type="text" name="team_member_1" x-model="formData.team_member_1" value="{{ old('team_member_1') }}" 
                                            placeholder="Full name of member 1"
-                                           class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_member_1') border-red-400 @enderror">
+                                           class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                           :class="validationErrors.team_member_1 ? 'border-red-400' : 'border-gray-200'">
                                     @error('team_member_1')
                                     <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                                     @enderror
@@ -207,7 +198,8 @@
                                     </label>
                                     <input id="team_member_2" type="text" name="team_member_2" x-model="formData.team_member_2" value="{{ old('team_member_2') }}" 
                                            placeholder="Full name of member 2"
-                                           class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_member_2') border-red-400 @enderror">
+                                           class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                           :class="validationErrors.team_member_2 ? 'border-red-400' : 'border-gray-200'">
                                     @error('team_member_2')
                                     <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                                     @enderror
@@ -220,7 +212,8 @@
                                     </label>
                                     <input id="team_member_3" type="text" name="team_member_3" x-model="formData.team_member_3" value="{{ old('team_member_3') }}" 
                                         placeholder="Full name of member 3"
-                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('team_member_3') border-red-400 @enderror">
+                                        class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                        :class="validationErrors.team_member_3 ? 'border-red-400' : 'border-gray-200'">
                                     @error('team_member_3')
                                     <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                                     @enderror
@@ -234,7 +227,8 @@
                             </label>
                             <input id="university" type="text" name="university" x-model="formData.university" value="{{ old('university') }}" 
                                    placeholder="University name"
-                                   class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('university') border-red-400 @enderror">
+                                   class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                   :class="validationErrors.university ? 'border-red-400' : 'border-gray-200'">
                             @error('university')
                             <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -247,7 +241,8 @@
                                 </label>
                                 <input id="contact_number" type="text" name="contact_number" x-model="formData.contact_number" value="{{ old('contact_number') }}" 
                                        placeholder="08xxxxxxxxxx"
-                                       class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('contact_number') border-red-400 @enderror">
+                                       class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                       :class="validationErrors.contact_number ? 'border-red-400' : 'border-gray-200'">
                                 @error('contact_number')
                                 <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                                 @enderror
@@ -259,7 +254,8 @@
                                 </label>
                                 <input id="email" type="email" name="email" x-model="formData.email" value="{{ old('email') }}" 
                                        placeholder="team@example.com"
-                                       class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('email') border-red-400 @enderror">
+                                       class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                       :class="validationErrors.email ? 'border-red-400' : 'border-gray-200'">
                                 @error('email')
                                 <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                                 @enderror
@@ -273,7 +269,8 @@
                             <div class="relative">
                                 <input id="password" :type="showPassword ? 'text' : 'password'" name="password" x-model="formData.password"
                                        placeholder="Minimum 8 characters"
-                                       class="w-full px-4 pr-12 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('password') border-red-400 @enderror">
+                                       class="w-full px-4 pr-12 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                       :class="validationErrors.password ? 'border-red-400' : 'border-gray-200'">
                                 <button type="button" @click="showPassword = !showPassword"
                                         class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-[#0F4C82]">
                                     <svg x-show="!showPassword" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -297,7 +294,8 @@
                             <div class="relative">
                                 <input id="password_confirmation" :type="showConfirmPassword ? 'text' : 'password'" name="password_confirmation" x-model="formData.password_confirmation"
                                        placeholder="Repeat password"
-                                       class="w-full px-4 pr-12 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all">
+                                       class="w-full px-4 pr-12 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                       :class="validationErrors.password_confirmation ? 'border-red-400' : 'border-gray-200'">
                                 <button type="button" @click="showConfirmPassword = !showConfirmPassword"
                                         class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-[#0F4C82]">
                                     <svg x-show="!showConfirmPassword" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -326,7 +324,8 @@
                             </label>
                             <input id="link_drive_payment" type="url" name="link_drive_payment" x-model="formData.link_drive_payment" value="{{ old('link_drive_payment') }}" 
                                    placeholder="https://drive.google.com/file/d/..."
-                                   class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all @error('link_drive_payment') border-red-400 @enderror">
+                                   class="w-full px-4 py-3 border-2 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-transparent transition-all"
+                                   :class="validationErrors.link_drive_payment ? 'border-red-400' : 'border-gray-200'">
                             @error('link_drive_payment')
                             <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -366,7 +365,8 @@
 
                     <div class="mt-6 flex items-start">
                         <input id="terms" name="terms" type="checkbox" x-model="formData.terms" value="1" 
-                               class="w-4 h-4 text-[#0F4C82] border-2 border-gray-300 rounded focus:ring-[#0F4C82] mt-1">
+                               class="w-4 h-4 text-[#0F4C82] border-2 rounded focus:ring-[#0F4C82] mt-1"
+                               :class="validationErrors.terms ? 'border-red-400' : 'border-gray-300'">
                         <label for="terms" class="ml-3 text-sm text-gray-600 font-garet">
                             I agree to the <a href="#" class="text-[#0F4C82] font-bold underline">Terms & Conditions</a> and 
                             <a href="#" class="text-[#0F4C82] font-bold underline">Privacy Policy</a> of BOREYES 2026
@@ -430,12 +430,13 @@
 }
 </style>
 @endpush
+
 @push('scripts')
 <script>
 function registrationForm() {
     return {
         step: 1,
-        errors: [],
+        validationErrors: {},
         isPODCompetition: false,
         selectedCompetitionName: '',
         formData: {
@@ -455,7 +456,6 @@ function registrationForm() {
         },
         
         init() {
-            // Check if there's old competition_id on page load (after validation error)
             if (this.formData.competition_id) {
                 const selectedRadio = document.querySelector(`input[name="competition_id"][value="${this.formData.competition_id}"]`);
                 if (selectedRadio) {
@@ -476,72 +476,75 @@ function registrationForm() {
             if (!this.isPODCompetition) {
                 this.formData.team_member_3 = '';
             }
+            
+            // Clear competition validation error when selected
+            delete this.validationErrors.competition_id;
         },
         
         validateStep1() {
-            this.errors = [];
+            this.validationErrors = {};
             
             if (!this.formData.competition_id) {
-                this.errors.push('Please select a competition');
+                this.validationErrors.competition_id = true;
             }
             
-            return this.errors.length === 0;
+            return Object.keys(this.validationErrors).length === 0;
         },
         
         validateStep2() {
-            this.errors = [];
+            this.validationErrors = {};
             
             if (!this.formData.team_name || this.formData.team_name.trim() === '') {
-                this.errors.push('Team name is required');
+                this.validationErrors.team_name = true;
             }
             if (!this.formData.team_leader || this.formData.team_leader.trim() === '') {
-                this.errors.push('Team leader name is required');
+                this.validationErrors.team_leader = true;
             }
             if (!this.formData.team_member_1 || this.formData.team_member_1.trim() === '') {
-                this.errors.push('Member 1 name is required');
+                this.validationErrors.team_member_1 = true;
             }
             if (!this.formData.team_member_2 || this.formData.team_member_2.trim() === '') {
-                this.errors.push('Member 2 name is required');
+                this.validationErrors.team_member_2 = true;
             }
             
             if (this.isPODCompetition && (!this.formData.team_member_3 || this.formData.team_member_3.trim() === '')) {
-                this.errors.push('Member 3 is required for Plan of Development competition');
+                this.validationErrors.team_member_3 = true;
             }
             
             if (!this.formData.university || this.formData.university.trim() === '') {
-                this.errors.push('University name is required');
+                this.validationErrors.university = true;
             }
             if (!this.formData.contact_number || this.formData.contact_number.trim() === '') {
-                this.errors.push('Contact number is required');
+                this.validationErrors.contact_number = true;
             }
             if (!this.formData.email || this.formData.email.trim() === '') {
-                this.errors.push('Email address is required');
+                this.validationErrors.email = true;
             } else if (!this.isValidEmail(this.formData.email)) {
-                this.errors.push('Please enter a valid email address');
+                this.validationErrors.email = true;
             }
             if (!this.formData.password || this.formData.password.length < 8) {
-                this.errors.push('Password must be at least 8 characters');
+                this.validationErrors.password = true;
             }
             if (this.formData.password !== this.formData.password_confirmation) {
-                this.errors.push('Password confirmation does not match');
+                this.validationErrors.password_confirmation = true;
             }
             if (!this.formData.link_drive_payment || this.formData.link_drive_payment.trim() === '') {
-                this.errors.push('Payment proof link is required');
+                this.validationErrors.link_drive_payment = true;
             } else if (!this.isValidUrl(this.formData.link_drive_payment)) {
-                this.errors.push('Payment proof link must be a valid URL');
+                this.validationErrors.link_drive_payment = true;
             }
             
-            return this.errors.length === 0;
+            return Object.keys(this.validationErrors).length === 0;
         },
         
         validateStep3() {
-            this.errors = [];
+            this.validationErrors = {};
             
             if (!this.formData.terms) {
-                this.errors.push('You must accept the terms and conditions');
+                this.validationErrors.terms = true;
             }
             
-            return this.errors.length === 0;
+            return Object.keys(this.validationErrors).length === 0;
         },
         
         validateAndGoToStep2() {
@@ -570,7 +573,6 @@ function registrationForm() {
                 return false;
             }
             
-            // Manually set the value of team_member_3 field before submit
             const member3Input = document.getElementById('team_member_3');
             if (this.isPODCompetition && member3Input) {
                 member3Input.value = this.formData.team_member_3;
@@ -578,7 +580,6 @@ function registrationForm() {
                 member3Input.value = '';
             }
             
-            // Now submit the form
             e.target.submit();
         },
         

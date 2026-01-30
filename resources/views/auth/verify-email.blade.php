@@ -28,18 +28,7 @@
         <!-- Main Card -->
         <div class="verify-card bg-white rounded-xl shadow-xl p-6 sm:p-8 border-2 border-[#D3EB9F]/30">
             
-            <!-- Email Icon -->
-            <div class="email-animation text-center mb-6">
-                <div class="inline-block relative w-32 h-32">
-                    <div class="email-envelope absolute inset-0 m-auto w-24 h-24 bg-gradient-to-br from-[#6F97B6] to-[#8CCDCF] rounded-2xl flex items-center justify-center shadow-xl">
-                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"></path>
-                        </svg>
-                    </div>
-                    <!-- Pulse Ring -->
-                    <div class="pulse-ring absolute inset-0 m-auto w-24 h-24 rounded-2xl border-4 border-[#6F97B6] pointer-events-none"></div>
-                </div>
-            </div>
+           
 
             <h2 class="text-2xl sm:text-3xl font-helvetica font-black text-[#0F4C82] mb-4 text-center">
                 Check Your Inbox

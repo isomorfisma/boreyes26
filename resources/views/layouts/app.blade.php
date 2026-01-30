@@ -7,6 +7,14 @@
 
         <title>{{ config('app.name', 'Boreyes 2026') }} - @yield('title', 'SPE Unpad SC')</title>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png?v={{ time() }}" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg?v={{ time() }}" />
+        <link rel="shortcut icon" href="/my-favicon/favicon.ico?v={{ time() }}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png?v={{ time() }}" />
+        <meta name="apple-mobile-web-app-title" content="Boreyes" />
+        <link rel="manifest" href="/my-favicon/site.webmanifest?v={{ time() }}" />
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +29,9 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-       
         <!-- GSAP Library - PENTING! -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
         
 
         <style>

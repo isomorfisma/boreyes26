@@ -275,128 +275,169 @@
                         <p class="text-xl sm:text-2xl font-helvetica font-black text-[#0F4C82]">Submitted</p>
                         <p class="text-xs sm:text-sm text-[#6B7280] font-garet">{{ $submission->submitted_at->format('d M Y, H:i') }}</p>
                     @else
-                        <p class="text-xl sm:text-2xl font-helvetica font-black text-gray-600">Not Submitted</p>
-                        <p class="text-xs sm:text-sm text-[#6B7280] font-garet">Upload your work</p>
+                        @if($status === 'verified')
+                            <p class="text-xl sm:text-2xl font-helvetica font-black text-gray-600">Not Submitted</p>
+                            
+                        @else
+                            <p class="text-xl sm:text-2xl font-helvetica font-black text-gray-600">Not Submitted</p>
+                            <p class="text-xs sm:text-sm text-[#6B7280] font-garet">Waiting payment verification</p>
+                        @endif
                     @endif
                 </div>
             </div>
             @endif
         </div>
         
-        <!-- Submission Card - Only show if competition has submission AND payment is verified -->
-        @if($hasSubmission && $status === 'verified')
-        <div class="mb-6 sm:mb-8 submission-section">
-            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-[#D3EB9F]/30 hover:shadow-3xl transition-all duration-300">
-                <!-- Header -->
-                <div class="relative bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] p-4 sm:p-5 lg:p-6 overflow-hidden">
-                    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
-                    <div class="relative z-10 flex items-center justify-between">
-                        <div class="flex items-center space-x-2 sm:space-x-3 flex-1 min-w-0">
-                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0">
-                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
-                            </div>
-                            <div class="min-w-0">
-                                <h2 class="text-base sm:text-lg lg:text-xl font-helvetica font-black text-white leading-tight truncate">Submission</h2>
-                                @if($schedule)
-                                <p class="text-white/80 text-xs sm:text-sm font-garet mt-0.5 sm:mt-1 truncate">Deadline: {{ \Carbon\Carbon::parse($schedule['competition_end'])->format('d M Y, H:i') }}</p>
+        <!-- Submission Card - Only show if competition has submission -->
+        @if($hasSubmission)
+            @if($status === 'verified')
+                <!-- Payment Verified - Show Submission Form -->
+                <div class="mb-6 sm:mb-8 submission-section">
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-[#D3EB9F]/30 hover:shadow-3xl transition-all duration-300">
+                        <!-- Header -->
+                        <div class="relative bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] p-4 sm:p-5 lg:p-6 overflow-hidden">
+                            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+                            <div class="relative z-10 flex items-center justify-between">
+                                <div class="flex items-center space-x-2 sm:space-x-3 flex-1 min-w-0">
+                                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="min-w-0">
+                                        <h2 class="text-base sm:text-lg lg:text-xl font-helvetica font-black text-white leading-tight truncate">Submission</h2>
+                                        @if($schedule)
+                                        <p class="text-white/80 text-xs sm:text-sm font-garet mt-0.5 sm:mt-1 truncate">Deadline: {{ \Carbon\Carbon::parse($schedule['competition_end'])->format('d M Y, H:i') }}</p>
+                                        @endif
+                                    </div>
+                                </div>
+                                
+                                <!-- Selection Badge if exists -->
+                                @if($selection)
+                                <div class="ml-2 sm:ml-4 flex-shrink-0">
+                                    <span class="px-2 sm:px-3 py-1 sm:py-1.5 {{ $selection->status === 'passed' ? 'bg-green-500' : 'bg-red-500' }} text-white text-xs sm:text-sm font-helvetica font-black rounded-lg whitespace-nowrap">
+                                        {{ strtoupper($selection->status) }}
+                                    </span>
+                                </div>
                                 @endif
                             </div>
                         </div>
                         
-                        <!-- Selection Badge if exists -->
-                        @if($selection)
-                        <div class="ml-2 sm:ml-4 flex-shrink-0">
-                            <span class="px-2 sm:px-3 py-1 sm:py-1.5 {{ $selection->status === 'passed' ? 'bg-green-500' : 'bg-red-500' }} text-white text-xs sm:text-sm font-helvetica font-black rounded-lg whitespace-nowrap">
-                                {{ strtoupper($selection->status) }}
-                            </span>
+                        <!-- Content -->
+                        <div class="p-4 sm:p-5 lg:p-6">
+                            @if(!$canSubmit)
+                                <!-- Cannot Submit (Passed or Deadline) -->
+                                @if($selection && $selection->status === 'passed')
+                                <div class="p-3 sm:p-4 bg-green-50 border-2 border-green-200 text-green-700 rounded-xl mb-4 text-sm sm:text-base">
+                                    <div class="flex items-start">
+                                        <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-bold mb-1">Congratulations! You've passed the selection.</p>
+                                            <p class="text-sm">Your submission is locked and cannot be changed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                @elseif($schedule && now()->gt(\Carbon\Carbon::parse($schedule['competition_end'])))
+                                <div class="p-3 sm:p-4 bg-red-50 border-2 border-red-200 text-red-700 rounded-xl mb-4 text-sm sm:text-base">
+                                    <div class="flex items-start">
+                                        <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-bold mb-1">Submission deadline has passed.</p>
+                                            <p class="text-sm">Your submission cannot be changed anymore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+
+                                @if($submission)
+                                <div class="bg-gradient-to-br from-[#F8FBFC] to-white rounded-xl p-4 sm:p-5 border-2 border-[#D3EB9F]/30">
+                                    <p class="font-helvetica font-black text-[#0F4C82] mb-2 text-sm sm:text-base">Final submission:</p>
+                                    <a href="{{ $submission->drive_link }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all text-sm sm:text-base font-garet">
+                                        {{ $submission->drive_link }}
+                                    </a>
+                                    <p class="text-[#6B7280] text-xs sm:text-sm font-garet mt-2">
+                                        Submitted: {{ $submission->submitted_at->format('d M Y, H:i') }}
+                                    </p>
+                                </div>
+                                @endif
+                            @else
+                                <!-- Can still submit -->
+                                @if($submission)
+                                <div class="p-3 sm:p-4 bg-blue-50 border-2 border-blue-200 rounded-xl mb-4 text-sm sm:text-base">
+                                    <p class="font-helvetica font-black text-blue-900 mb-2">Current submission:</p>
+                                    <a href="{{ $submission->drive_link }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all font-garet">
+                                        {{ $submission->drive_link }}
+                                    </a>
+                                    <p class="text-blue-700 text-xs sm:text-sm font-garet mt-2">
+                                        Last updated: {{ $submission->submitted_at->format('d M Y, H:i') }}
+                                    </p>
+                                    <p class="mt-2 text-blue-600 italic text-xs sm:text-sm font-garet">
+                                        You can still edit your submission until the deadline or until you pass the selection
+                                    </p>
+                                </div>
+                                @endif
+
+                                <!-- Submission Form -->
+                                <form method="POST" action="{{ route('submission.store') }}" class="space-y-4">
+                                    @csrf
+                                    <div>
+                                        <label class="block text-sm sm:text-base font-helvetica font-black text-[#0F4C82] mb-2">
+                                            Google Drive Link <span class="text-red-500">*</span>
+                                        </label>
+                                        <input type="url" 
+                                               name="drive_link" 
+                                               required 
+                                               class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-[#D3EB9F]/30 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-[#0F4C82] bg-[#F8FBFC] text-[#0F4C82] font-garet text-sm sm:text-base"
+                                               placeholder="https://drive.google.com/..."
+                                               value="{{ $submission?->drive_link }}">
+                                        <p class="text-xs text-[#6B7280] font-garet mt-1.5">Make sure your Google Drive link is accessible</p>
+                                    </div>
+                                    <button type="submit" class="w-full px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl hover:shadow-lg transform hover:scale-105 transition-all text-sm sm:text-base">
+                                        {{ $submission ? '🔄 Update Submission' : 'Submit Work' }}
+                                    </button>
+                                </form>
+                            @endif
                         </div>
-                        @endif
                     </div>
                 </div>
-                
-                <!-- Content -->
-                <div class="p-4 sm:p-5 lg:p-6">
-                    @if(!$canSubmit)
-                        <!-- Cannot Submit (Passed or Deadline) -->
-                        @if($selection && $selection->status === 'passed')
-                        <div class="p-3 sm:p-4 bg-green-50 border-2 border-green-200 text-green-700 rounded-xl mb-4 text-sm sm:text-base">
-                            <div class="flex items-start">
-                                <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+            @else
+                <!-- Payment Not Verified - Show Info Message -->
+                <div class="mb-6 sm:mb-8">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#8CCDCF]/30">
+                        <div class="relative bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] p-4 sm:p-5 lg:p-6">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/90 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#0F4C82]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                </div>
                                 <div>
-                                    <p class="font-bold mb-1">Congratulations! You've passed the selection.</p>
-                                    <p class="text-sm">Your submission is locked and cannot be changed.</p>
+                                    <h3 class="text-lg sm:text-xl font-helvetica font-black text-white">Submission Locked</h3>
+                                    <p class="text-white/90 text-xs sm:text-sm font-garet mt-0.5">Payment verification required</p>
                                 </div>
                             </div>
                         </div>
-                        @elseif($schedule && now()->gt(\Carbon\Carbon::parse($schedule['competition_end'])))
-                        <div class="p-3 sm:p-4 bg-red-50 border-2 border-red-200 text-red-700 rounded-xl mb-4 text-sm sm:text-base">
-                            <div class="flex items-start">
-                                <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        
+                        <div class="p-4 sm:p-5 lg:p-6 bg-gradient-to-br from-[#F8FBFC] to-[#D6EBDF]/20">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-[#6F97B6] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
-                                <div>
-                                    <p class="font-bold mb-1">Submission deadline has passed.</p>
-                                    <p class="text-sm">Your submission cannot be changed anymore.</p>
+                                <div class="flex-1">
+                                    <p class="text-sm sm:text-base text-[#0F4C82] font-garet mb-3">
+                                        <strong class="font-helvetica font-black">The submission form will be available after your payment is verified.</strong>
+                                    </p>
+                                    
                                 </div>
                             </div>
                         </div>
-                        @endif
-
-                        @if($submission)
-                        <div class="bg-gradient-to-br from-[#F8FBFC] to-white rounded-xl p-4 sm:p-5 border-2 border-[#D3EB9F]/30">
-                            <p class="font-helvetica font-black text-[#0F4C82] mb-2 text-sm sm:text-base">Final submission:</p>
-                            <a href="{{ $submission->drive_link }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all text-sm sm:text-base font-garet">
-                                {{ $submission->drive_link }}
-                            </a>
-                            <p class="text-[#6B7280] text-xs sm:text-sm font-garet mt-2">
-                                Submitted: {{ $submission->submitted_at->format('d M Y, H:i') }}
-                            </p>
-                        </div>
-                        @endif
-                    @else
-                        <!-- Can still submit -->
-                        @if($submission)
-                        <div class="p-3 sm:p-4 bg-blue-50 border-2 border-blue-200 rounded-xl mb-4 text-sm sm:text-base">
-                            <p class="font-helvetica font-black text-blue-900 mb-2">Current submission:</p>
-                            <a href="{{ $submission->drive_link }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all font-garet">
-                                {{ $submission->drive_link }}
-                            </a>
-                            <p class="text-blue-700 text-xs sm:text-sm font-garet mt-2">
-                                Last updated: {{ $submission->submitted_at->format('d M Y, H:i') }}
-                            </p>
-                            <p class="mt-2 text-blue-600 italic text-xs sm:text-sm font-garet">
-                                You can still edit your submission until the deadline or until you pass the selection
-                            </p>
-                        </div>
-                        @endif
-
-                        <!-- Submission Form -->
-                        <form method="POST" action="{{ route('submission.store') }}" class="space-y-4">
-                            @csrf
-                            <div>
-                                <label class="block text-sm sm:text-base font-helvetica font-black text-[#0F4C82] mb-2">
-                                    Google Drive Link <span class="text-red-500">*</span>
-                                </label>
-                                <input type="url" 
-                                       name="drive_link" 
-                                       required 
-                                       class="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-[#D3EB9F]/30 rounded-xl focus:ring-2 focus:ring-[#0F4C82] focus:border-[#0F4C82] bg-[#F8FBFC] text-[#0F4C82] font-garet text-sm sm:text-base"
-                                       placeholder="https://drive.google.com/..."
-                                       value="{{ $submission?->drive_link }}">
-                                <p class="text-xs text-[#6B7280] font-garet mt-1.5">Make sure your Google Drive link is accessible</p>
-                            </div>
-                            <button type="submit" class="w-full px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl hover:shadow-lg transform hover:scale-105 transition-all text-sm sm:text-base">
-                                {{ $submission ? '🔄 Update Submission' : 'Submit Work' }}
-                            </button>
-                        </form>
-                    @endif
+                    </div>
                 </div>
-            </div>
-        </div>
+            @endif
         @endif
 
         <!-- Competition Schedule Card - COLLAPSIBLE -->
