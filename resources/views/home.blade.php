@@ -55,11 +55,12 @@
                     <!-- Glow Effect -->
                     <div class="gsap-hero-glow absolute -inset-6 bg-white/20 backdrop-blur-md rounded-full blur-2xl"></div>
 
-                    <!-- Main Logo Container -->
+                   <!-- Main Logo Container -->
                     <div class="gsap-hero-logo-container relative bg-white/10 backdrop-blur-md border-4 border-white/40 rounded-full p-8 sm:p-10 shadow-2xl">
                         <img src="{{ asset('assets/svg/LOGO.svg') }}"
-                             alt="Logo"
-                             class="gsap-hero-logo w-32 h-32 sm:w-40 sm:h-40 drop-shadow-2xl object-contain" />
+                            alt="Logo"
+                            class="gsap-hero-logo w-32 h-32 sm:w-40 sm:h-40 drop-shadow-2xl object-contain"
+                            style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; transform: translateZ(0); backface-visibility: hidden;" />
                     </div>
 
                     <!-- Animated Rings -->
@@ -292,8 +293,12 @@
                                     <span class="text-xs font-helvetica font-bold text-white/90 uppercase tracking-wider">Official Logo</span>
                                 </div>
                                 
-                                <img src="{{ asset('assets/svg/LOGO.svg') }}" alt="Event Logo" class="w-full h-auto max-w-[280px] max-h-[280px] object-contain drop-shadow-2xl mb-8 logo-float">
-                                
+                                <!-- Untuk Logo -->
+                                <img src="{{ asset('assets/svg/LOGO.svg') }}" 
+                                    alt="Event Logo" 
+                                    class="w-full h-auto max-w-[280px] max-h-[280px] object-contain drop-shadow-2xl mb-8 logo-float"
+                                    style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+                                                                
                                 <div class="absolute bottom-6 left-0 right-0 flex justify-center">
                                     <div class="flex items-center space-x-2 text-white/80 text-sm bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
                                         <span class="font-garet">Click for details</span>
@@ -359,14 +364,17 @@
                                     <span class="text-xs font-helvetica font-bold text-white/90 uppercase tracking-wider">Official Mascot</span>
                                 </div>
                                 
-                                <img src="{{ asset('assets/svg/MATA.svg') }}" alt="Event Mascot" class="w-full h-auto max-w-[280px] max-h-[280px] object-contain drop-shadow-2xl mb-8 mascot-bounce">
+                                <img src="{{ asset('assets/svg/MATA.svg') }}" 
+                                    alt="Event Mascot" 
+                                    class="w-full h-auto max-w-[280px] max-h-[280px] object-contain drop-shadow-2xl mb-8 mascot-bounce"
+                                    style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
                                 
                                 <div class="absolute bottom-6 left-0 right-0 flex justify-center">
                                     <div class="flex items-center space-x-2 text-white/80 text-sm bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
                                         <span class="font-garet">Click for details</span>
-                                        <!-- <svg class="w-4 h-4 bounce-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <svg class="w-4 h-4 bounce-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                        </svg> -->
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -456,11 +464,11 @@
                     <div class="relative bg-gradient-to-br from-[#6F97B6] to-[#8CCDCF] rounded-xl p-4 shadow-2xl">
                         <div class="flex items-center space-x-3">
                             <div class="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50 overflow-hidden">
-                               <img src="{{ asset('assets/img/SUPERVISOR.jpg') }}" alt="SV" class="w-full h-full object-cover">
+                               <img src="{{ asset('assets/img/SUPERVISOR_AHMAD_RAFLI_ARSYAH.jpg') }}" alt="SV" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <p class="text-xs uppercase text-white/90 font-helvetica font-bold">Supervisor</p>
-                                <h3 class="text-base font-helvetica font-black text-white">Supervisor</h3>
+                                <h3 class="text-base font-helvetica font-black text-white">Ahmad RaflI & Arsyah</h3>
                             </div>
                         </div>
                     </div>
@@ -492,7 +500,7 @@
                             <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
                                <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_RAFAEL_ANTONIO.jpg') }}" alt="VPO 1" class="w-full h-full object-cover">
                             </div>
-                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 1</p>
+                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice Project Officer 1</p>
                             <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Rafael Antonio</h4>
                         </div>
                     </div>
@@ -506,7 +514,7 @@
                             <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
                                 <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_TARAKA_AMAR.jpg') }}" alt="VPO 2" class="w-full h-full object-cover">
                             </div>
-                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 2</p>
+                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice Project Officer 2</p>
                             <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Taraka Amar</h4>
                         </div>
                     </div>
@@ -651,7 +659,7 @@
                                 <img src="{{ asset('assets/img/PROJECT_OFFICER_FARREL_ATHAYA.jpg') }}" alt="PO" class="w-full h-full object-cover">
                             </div>
                             <div>
-                                <p class="text-xs uppercase text-[#D3EB9F] font-helvetica font-bold">PO</p>
+                                <p class="text-xs uppercase text-[#D3EB9F] font-helvetica font-bold">Project Officer</p>
                                 <h3 class="text-base font-helvetica font-black text-white">Farrel Athaya</h3>
                             </div>
                         </div>
@@ -663,11 +671,11 @@
                     <div class="relative bg-gradient-to-br from-[#6F97B6] to-[#8CCDCF] rounded-xl p-4 shadow-2xl">
                         <div class="flex items-center space-x-3">
                             <div class="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/50 overflow-hidden">
-                                 <img src="{{ asset('assets/img/SUPERVISOR.jpg') }}" alt="SV" class="w-full h-full object-cover">
+                                 <img src="{{ asset('assets/img/SUPERVISOR_AHMAD_RAFLI_ARSYAH.jpg') }}" alt="SV" class="w-full h-full object-cover">
                             </div>
                             <div>
-                                <p class="text-xs uppercase text-white/90 font-helvetica font-bold">SV</p>
-                                <h3 class="text-base font-helvetica font-black text-white">Supervisor</h3>
+                                <p class="text-xs uppercase text-white/90 font-helvetica font-bold">Supervisor</p>
+                                <h3 class="text-base font-helvetica font-black text-white">Ahmad RaflI & Arsyah</h3>
                             </div>
                         </div>
                     </div>
@@ -688,7 +696,7 @@
                             <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
                               <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_RAFAEL_ANTONIO.jpg') }}" alt="VPO 1" class="w-full h-full object-cover">
                             </div>
-                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 1</p>
+                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice Project Officer 1</p>
                             <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Rafael Antonio</h4>
                         </div>
                     </div>
@@ -701,7 +709,7 @@
                             <div class="w-24 h-24 rounded-full bg-white/30 flex items-center justify-center border-2 border-white/50 mx-auto mb-2 overflow-hidden">
                                 <img src="{{ asset('assets/img/VICE_PROJECT_OFFICER_TARAKA_AMAR.jpg') }}" alt="VPO 2" class="w-full h-full object-cover">
                             </div>
-                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice PO 2</p>
+                            <p class="text-xs uppercase text-[#0F4C82]/80 font-helvetica font-bold mb-1">Vice Project Officer 2</p>
                             <h4 class="text-sm font-helvetica font-black text-[#0F4C82]">Taraka Amar</h4>
                         </div>
                     </div>
@@ -1433,7 +1441,43 @@
             box-shadow: 0 10px 40px rgba(15, 76, 130, 0.15);
         }
 
+        /* Optimasi semua SVG di hero section */
+        .gsap-hero-logo {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            shape-rendering: geometricPrecision;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+            will-change: transform;
+        }
+
+        /* Optimasi backdrop blur agar tidak affect SVG */
+        .gsap-hero-logo-container {
+            transform: translateZ(0);
+        }
+
         /* ==================== FLIP CARD STYLES - IMPROVED ==================== */
+
+        /* Optimasi rendering SVG */
+        .flip-card-front img,
+        .flip-card-back img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated; /* fallback */
+            shape-rendering: geometricPrecision;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Khusus untuk SVG animations */
+        .logo-float,
+        .mascot-bounce {
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+        }
+
         .flip-card {
             perspective: 1000px;
             cursor: pointer;
@@ -2108,6 +2152,8 @@ if (btnSecondary) {
                 ease: 'elastic.out(1, 0.6)'
             });
         }
+
+        
 
         // Logo image subtle float
         const logo = logoWrapper.querySelector('.gsap-hero-logo');
