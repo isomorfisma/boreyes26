@@ -872,7 +872,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 1</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">4th March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">7th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Companies Talks</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -886,7 +886,7 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 1</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">4 Maret 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">7th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Companies Talks</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
@@ -910,7 +910,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 2</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">26 - 29 March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">26 - 29th March 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Prelimination Stage</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -924,7 +924,7 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 2</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">26 - 29 March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">26 - 29th March 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Prelimination Stage</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
@@ -948,7 +948,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#8CCDCF]/20 hover:border-[#8CCDCF]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 3</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">28 March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">28th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">CSR</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -962,7 +962,7 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#8CCDCF]/20 hover:border-[#8CCDCF]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 3</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">28 March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">28th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">CSR</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
@@ -986,7 +986,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#C5E6C9]/20 hover:border-[#C5E6C9]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 4</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">6 April 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">6th April 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Field Trip</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -1000,7 +1000,7 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#C5E6C9]/20 hover:border-[#C5E6C9]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 4</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">6 April 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">6th April 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Field Trip</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
@@ -1024,7 +1024,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 5</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">8 May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Ignite Talks</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -1038,7 +1038,7 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 5</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">8 May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Ignite Talks</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
@@ -1062,7 +1062,7 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 6</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">9 May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Grand Final</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -1076,7 +1076,7 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 6</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">9 May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Grand Final</h3>
                                     <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
@@ -1105,7 +1105,7 @@
                                             </svg>
                                             Main Event
                                         </span>
-                                        <span class="text-white font-black text-sm font-helvetica">10 May 2026</span>
+                                        <span class="text-white font-black text-sm font-helvetica">16th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-white mb-2">Fun Day and Gala Dinner</h3>
                                     <!-- <p class="text-sm text-white/80 font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
@@ -1124,7 +1124,7 @@
                                             </svg>
                                             Main Event
                                         </span>
-                                        <span class="text-white font-black text-sm font-helvetica">10 May 2026</span>
+                                        <span class="text-white font-black text-sm font-helvetica">16th May 2026</span>
                                     </div>
                                     <h3 class="text-xl font-helvetica font-black tracking-tight text-white mb-2">Fun Day and Gala Dinner</h3>
                                     <!-- <p class="text-sm text-white/80 font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
