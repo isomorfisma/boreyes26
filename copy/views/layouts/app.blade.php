@@ -647,7 +647,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                 </div>
-                                <span class="text-sm text-white/95 font-garet">boreyes@speunpad.com</span>
+                                <span class="text-sm text-white/95 font-garet">boreyes2026@gmail.com</span>
                             </li>
                             <li class="flex items-start space-x-3">
                                 <div class="w-8 h-8 bg-[#D3EB9F]/20 backdrop-blur-md rounded-lg flex items-center justify-center flex-shrink-0">
