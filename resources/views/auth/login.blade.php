@@ -130,22 +130,22 @@
                 </form>
 
                 <!-- Register Link -->
-                <div class="mt-8 text-center">
+                <!-- <div class="mt-8 text-center">
                     <p class="text-sm text-[#6B7280] font-garet">
                         Don't have an account? 
                         <a href="{{ route('register') }}" class="text-[#0F4C82] font-helvetica font-black hover:text-[#6F97B6] transition-colors">
                             Register now
                         </a>
                     </p>
-                </div>
+                </div> -->
 
                 <!-- Additional Info -->
                 <div class="mt-6 p-4 bg-gradient-to-r from-[#C5E6C9]/10 to-[#D3EB9F]/10 rounded-xl border border-[#D3EB9F]/30">
                     <p class="text-xs text-center text-[#6B7280] font-garet leading-relaxed">
-                        By signing in, you agree to BOREYES 2026 
-                        <a href="#" class="text-[#0F4C82] font-helvetica font-black hover:underline">Terms of Service</a> 
+                        By signing in, you agree to BOREYES 2026 Terms of Service and Privacy Policy.
+                        <!-- <a href="#" class="text-[#0F4C82] font-helvetica font-black hover:underline">Terms of Service</a> 
                         and 
-                        <a href="#" class="text-[#0F4C82] font-helvetica font-black hover:underline">Privacy Policy</a>
+                        <a href="#" class="text-[#0F4C82] font-helvetica font-black hover:underline">Privacy Policy</a> -->
                     </p>
                 </div>
             </div>

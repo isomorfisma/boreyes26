@@ -238,11 +238,11 @@
                         Jika mengalami kesulitan dalam submit essay, hubungi tim kami:
                     </p>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <a href="mailto:boreyes@speunpad.com" class="inline-flex items-center px-5 py-3 bg-[#0F4C82]/5 hover:bg-[#0F4C82]/10 text-[#0F4C82] rounded-xl font-garet text-sm font-medium transition-all">
+                        <a href="mailto:boreyes2026@gmail.com" class="inline-flex items-center px-5 py-3 bg-[#0F4C82]/5 hover:bg-[#0F4C82]/10 text-[#0F4C82] rounded-xl font-garet text-sm font-medium transition-all">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            boreyes@speunpad.com
+                            boreyes2026@gmail.com
                         </a>
                         <a href="https://wa.me/62xxx" target="_blank" class="inline-flex items-center px-5 py-3 bg-green-50 hover:bg-green-100 text-green-700 rounded-xl font-garet text-sm font-medium transition-all">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">

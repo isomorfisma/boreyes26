@@ -98,10 +98,10 @@
                     </button>
 
                     @guest
-                        <a href="{{ route('register') }}"
+                        <!-- <a href="{{ route('register') }}"
                             class="gsap-hero-btn-secondary group inline-flex items-center justify-center px-8 sm:px-10 lg:px-8 py-4 sm:py-5 lg:py-4 bg-white/10 backdrop-blur-md border-3 border-white text-white font-helvetica font-black rounded-2xl hover:bg-white hover:text-[#0F4C82] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 text-base sm:text-lg lg:text-base min-h-[60px] sm:min-h-[64px] lg:min-h-[56px] opacity-100 w-full sm:w-auto">
                             <span class="drop-shadow-[0_1px_1px_rgba(15,76,130,0.35)]">Register Now</span>
-                        </a>
+                        </a> -->
                     @endguest
                 </div>
             </div>
@@ -1177,13 +1177,13 @@
             </p> -->
             <div class="flex flex-col sm:flex-row gap-5 justify-center mb-16">
             @guest    
-            <a href="{{ route('register') }}" class="group inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-base font-helvetica font-black rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(211,235,159,0.5)] transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 min-h-[60px]">
+            <!-- <a href="{{ route('register') }}" class="group inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-base font-helvetica font-black rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(211,235,159,0.5)] transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 min-h-[60px]">
                     <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                     </svg>
                     <span>Register Now</span>
-                </a>
-                @endguest
+            </a> -->
+            @endguest
                 
             <button onclick="scrollToNavAndOpenDropdown()" class="group inline-flex items-center justify-center px-10 py-5 bg-white/10 backdrop-blur-md border-3 border-white text-white text-base font-helvetica font-black rounded-2xl hover:bg-white hover:text-[#0F4C82] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 min-h-[60px] cursor-pointer">
                 <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
