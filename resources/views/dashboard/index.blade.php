@@ -382,6 +382,23 @@
                                 @endif
 
                                 <!-- Submission Form -->
+                                {{-- SUCCESS MESSAGE --}}
+                                @if (session('success'))
+                                <div class="mb-4 p-4 rounded-xl bg-green-100 text-green-800 font-garet">
+                                    {{ session('success') }}
+                                </div>
+                                @endif
+
+                                {{-- ERROR MESSAGE --}}
+                                @if ($errors->any())
+                                <div class="mb-4 p-4 rounded-xl bg-red-100 text-red-800 font-garet">
+                                    <ul class="list-disc list-inside">
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                @endif
                                 <form method="POST" action="{{ route('submission.store') }}" class="space-y-4">
                                     @csrf
                                     <div>
@@ -397,7 +414,7 @@
                                         <p class="text-xs text-[#6B7280] font-garet mt-1.5">Make sure your Google Drive link is accessible</p>
                                     </div>
                                     <button type="submit" class="w-full px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] font-helvetica font-black rounded-xl hover:shadow-lg transform hover:scale-105 transition-all text-sm sm:text-base">
-                                        {{ $submission ? '🔄 Update Submission' : 'Submit Work' }}
+                                        {{ $submission ? 'Update Submission' : 'Submit Work' }}
                                     </button>
                                 </form>
                             @endif
