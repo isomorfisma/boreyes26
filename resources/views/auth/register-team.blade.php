@@ -351,7 +351,7 @@
                     <h2 class="text-2xl font-helvetica font-black text-[#0F4C82] mb-6">Review & Email Verification</h2>
 
                     <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 mb-6">
-                        <h3 class="text-lg font-helvetica font-bold text-[#0F4C82] mb-3">📧 Email Verification Link</h3>
+                        <h3 class="text-lg font-helvetica font-bold text-[#0F4C82] mb-3">Email Verification Link</h3>
                         <p class="text-sm text-gray-700 mb-4">After clicking "Register Now", a verification link will be sent to:</p>
                         <div class="bg-white rounded-lg p-3 border border-blue-300 mb-4">
                             <p class="font-bold text-[#0F4C82]" x-text="formData.email || 'Email not entered'"></p>

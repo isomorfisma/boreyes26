@@ -131,7 +131,7 @@
                     <div class="flex-1 min-w-0">
                         <h4 class="font-helvetica font-bold text-[#0F4C82] text-sm truncate">{{ $user->team_name }}</h4>
                         <p class="text-xs text-gray-400 font-mono mt-0.5">{{ $user->team_leader }}</p>
-                        <p class="font-helvetica font-bold text-[#0F4C82] text-base mt-2">Rp {{ number_format($user->competition->registration_fee ?? 0, 0, ',', '.') }}</p>
+                        <p class="font-helvetica font-bold text-[#0F4C82] text-base mt-2">Rp {{ number_format($user->competition->getCurrentPrice() ?? 0, 0, ',', '.') }}</p>
                     </div>
                 </div>
                 <a href="{{ route('admin.registrations') }}" class="block w-full py-2 text-center bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-xs font-garet font-bold rounded-lg hover:shadow-md transition-all">

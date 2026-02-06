@@ -38,7 +38,7 @@ class AdminDashboardController extends Controller
         ->where('payment_status', 'verified')
         ->with('competition')
         ->get()
-        ->sum(fn ($user) => $user->competition->price ?? 0);
+        ->sum(fn ($user) => $user->competition->early_bird_price ?? 0);
 
     // Latest registrations (team only)
     $latestRegistrations = User::with('competition')
