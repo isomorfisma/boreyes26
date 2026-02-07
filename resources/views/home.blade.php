@@ -562,20 +562,20 @@
                 <div class="absolute left-[5%] top-6 w-0.5 h-6 bg-[#D3EB9F]"></div>
                 <div class="absolute left-[24%] top-6 w-0.5 h-6 bg-[#D3EB9F]"></div>
                 
-                <!-- VPO 2 (37.5%) straight to External (37.5%) -->
-                <div class="absolute left-[37.5%] top-0 w-0.5 h-6 bg-[#D3EB9F]"></div>
-                <div class="absolute left-[37.5%] top-6 w-[5%] h-0.5 bg-[#D3EB9F]"></div>
+                <!-- VPO 2 (37.5%) straight to Operational (37.5%) -->
+                <div class="absolute left-[12.5%] top-0 w-0.5 h-6 bg-[#D3EB9F]"></div>
+                <div class="absolute left-[5%] top-6 w-[37.5%] h-0.5 bg-[#D3EB9F]"></div>
                 <div class="absolute left-[42.5%] top-6 w-0.5 h-6 bg-[#D3EB9F]"></div>
                 
-                <!-- CENTER LINE (50%) straight to Operational (62.5%) -->
-                <div class="absolute left-[50%] top-0 w-0.5 h-8 bg-[#D3EB9F]"></div>
-                <div class="absolute left-[50%] top-8 w-[17.5%] h-0.5 bg-[#D3EB9F]"></div>
-                <div class="absolute left-[67.5%] top-8 w-0.5 h-[16px] bg-[#D3EB9F]"></div>
+                <!-- CENTER LINE (50%) straight to External (62.5%) -->
+                <div class="absolute left-[37%] top-0 w-0.5 h-4 bg-[#D3EB9F]"></div>
+                <!-- <div class="absolute left-[50%] top-8 w-[17.5%] h-0.5 bg-[#D3EB9F]"></div> -->
+                <div class="absolute left-[67.5%] top-4 w-0.5 h-8 bg-[#D3EB9F]"></div>
   
                 <!-- Treasurer (62.5%) straight to Fundraising (82%) -->
-                <div class="absolute left-[62.5%] top-0 w-0.5 h-5 bg-[#D3EB9F]"></div>
-                <div class="absolute left-[62.5%] top-5 w-[28%] h-0.5 bg-[#D3EB9F]"></div> 
-                <div class="absolute left-[90.5%] top-5 w-0.5 h-7 bg-[#D3EB9F]"></div>
+                <!-- <div class="absolute left-[62.5%] top-0 w-0.5 h-5 bg-[#D3EB9F]"></div> -->
+                <div class="absolute left-[37%] top-4 w-[48.5%] h-0.5 bg-[#D3EB9F]"></div> 
+                <div class="absolute left-[85.5%] top-4 w-0.5 h-8 bg-[#D3EB9F]"></div>
                 
             </div>
 
@@ -610,10 +610,11 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
                         <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                            <img src="{{ asset('assets/img/EXTERNAL_MICHAEL_FATURIN.jpg') }}" alt="External" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/OPERASIONAL_DANISH_MUHAMMAD.jpg') }}" alt="Operational" class="w-full h-full object-cover">
+                            
                         </div>
-                        <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">External</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Michael Faturin</p>
+                        <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Operational</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Danish Muhammad</p>
                     </div>
                 </div>
 
@@ -623,16 +624,16 @@
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
                         <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                            <img src="{{ asset('assets/img/OPERASIONAL_DANISH_MUHAMMAD.jpg') }}" alt="Operational" class="w-full h-full object-cover">
+                            <img src="{{ asset('assets/img/EXTERNAL_MICHAEL_FATURIN.jpg') }}" alt="External" class="w-full h-full object-cover">
                         </div>
-                        <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Operational</p>
-                        <p class="text-xs text-[#6B7280] font-garet text-center">Danish Muhammad</p>
+                        <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">External</p>
+                        <p class="text-xs text-[#6B7280] font-garet text-center">Michael Faturin</p>
                     </div>
                     </div>
                 </div>
 
                 <!-- Fundraising - (~82%) -->
-                <div class="w-[16%] group relative md:translate-x-44">
+                <div class="w-[16%] group relative md:translate-x-28">
                  <div class="scroll-reveal" style="--reveal-delay: 1.1s;">
                     <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
                     <div class="relative bg-white/40 rounded-xl p-3 border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/40 transition-all">
@@ -746,95 +747,93 @@
             <div class="flex justify-center">
                 <div class="w-0.5 h-8 bg-[#D3EB9F]"></div>
             </div>
-
-            <!-- Operational (Center) -->
-            <div class="group relative max-w-xs mx-auto scroll-reveal" style="--reveal-delay: 0.7s;">
-                <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-                <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                         <img src="{{ asset('assets/img/OPERASIONAL_DANISH_MUHAMMAD.jpg') }}" alt="Operational" class="w-full h-full object-cover">
-                    </div>
-                    <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Operational</p>
-                    <p class="text-xs text-[#6B7280] font-garet text-center">Danish Muhammad</p>
-                </div>
-            </div>
-
-            <!-- SECTIONS FOR DIVISIONS -->
-            <div class="space-y-8 pt-4">
-                <!-- VPO 1 Divisions -->
-                <div>
-                    <div class="flex items-center justify-center mb-4">
-                        <div class="h-px bg-[#D3EB9F] flex-1"></div>
-                        <span class="text-xs font-helvetica font-bold text-[#0F4C82] px-3 bg-[#D3EB9F]/20 rounded-full py-1">VPO 1 Divisions</span>
-                        <div class="h-px bg-[#D3EB9F] flex-1"></div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="group relative scroll-reveal" style="--reveal-delay: 0.8s;">
-                            <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-                            <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                                <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                                <img src="{{ asset('assets/img/INTERNAL_AZQIATUL_TSABITAH.jpg') }}" alt="Internal" class="w-full h-full object-cover">
+                <!-- SECTIONS FOR DIVISIONS -->
+                <div class="space-y-8 pt-4">
+                    <!-- VPO 1 Divisions -->
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="h-px bg-[#D3EB9F] flex-1"></div>
+                            <span class="text-xs font-helvetica font-bold text-[#0F4C82] px-3 bg-[#D3EB9F]/20 rounded-full py-1">VPO 1 Divisions</span>
+                            <div class="h-px bg-[#D3EB9F] flex-1"></div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3">
+                            <!-- Internal -->
+                            <div class="group relative scroll-reveal" style="--reveal-delay: 0.8s;">
+                                <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                                <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20 h-full flex flex-col">
+                                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                        <img src="{{ asset('assets/img/INTERNAL_AZQIATUL_TSABITAH.jpg') }}" alt="Internal" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Internal</p>
+                                    <p class="text-xs text-[#6B7280] font-garet text-center">Azqiatul Tsabitah</p>
                                 </div>
-                                <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Internal</p>
-                                <p class="text-xs text-[#6B7280] font-garet text-center">Azqiatul Tsabitah</p>
                             </div>
-                        </div>
 
-                        <div class="group relative scroll-reveal" style="--reveal-delay: 0.9s;">
-                            <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-                            <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                                <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                                    <img src="{{ asset('assets/img/COMPETITION_RAIHAN_SHAIB.png') }}" alt="Competition" class="w-full h-full object-cover">
+                            <!-- Operational -->
+                            <div class="group relative scroll-reveal" style="--reveal-delay: 0.9s;">
+                                <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                                <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20 h-full flex flex-col">
+                                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                        <img src="{{ asset('assets/img/OPERASIONAL_DANISH_MUHAMMAD.jpg') }}" alt="Operational" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Operational</p>
+                                    <p class="text-xs text-[#6B7280] font-garet text-center">Danish Muhammad</p>
                                 </div>
-                                <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Competition</p>
-                                <p class="text-xs text-[#6B7280] font-garet text-center">Raihan Shaib</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- VPO 2 Division -->
-                <div>
-                    <div class="flex items-center justify-center mb-4">
-                        <div class="h-px bg-[#D3EB9F] flex-1"></div>
-                        <span class="text-xs font-helvetica font-bold text-[#0F4C82] px-3 bg-[#D3EB9F]/20 rounded-full py-1">VPO 2 Division</span>
-                        <div class="h-px bg-[#D3EB9F] flex-1"></div>
-                    </div>
-                    <div class="group relative max-w-xs mx-auto scroll-reveal" style="--reveal-delay: 1s;">
-                        <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-                        <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                            <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                                <img src="{{ asset('assets/img/EXTERNAL_MICHAEL_FATURIN.jpg') }}" alt="External" class="w-full h-full object-cover">
+                            <!-- Competition -->
+                            <div class="group relative scroll-reveal" style="--reveal-delay: 1s;">
+                                <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                                <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20 h-full flex flex-col">
+                                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                        <img src="{{ asset('assets/img/COMPETITION_RAIHAN_SHAIB.png') }}" alt="Competition" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Competition</p>
+                                    <p class="text-xs text-[#6B7280] font-garet text-center">Raihan Shaib</p>
+                                </div>
                             </div>
-                            <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">External</p>
-                            <p class="text-xs text-[#6B7280] font-garet text-center">Michael Faturin</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Treasurer Division -->
-                <div>
-                    <div class="flex items-center justify-center mb-4">
-                        <div class="h-px bg-[#D3EB9F] flex-1"></div>
-                        <span class="text-xs font-helvetica font-bold text-[#0F4C82] px-3 bg-[#D3EB9F]/20 rounded-full py-1">Treasurer Division</span>
-                        <div class="h-px bg-[#D3EB9F] flex-1"></div>
-                    </div>
-                    <div class="group relative max-w-xs mx-auto scroll-reveal" style="--reveal-delay: 1.1s;">
-                        <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
-                        <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
-                            <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
-                                <img src="{{ asset('assets/img/FINANCE_ANNETA_FAUZIA.jpg') }}" alt="Fundraising" class="w-full h-full object-cover">
+                    <!-- VPO 2 Division -->
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="h-px bg-[#D3EB9F] flex-1"></div>
+                            <span class="text-xs font-helvetica font-bold text-[#0F4C82] px-3 bg-[#D3EB9F]/20 rounded-full py-1">VPO 2 Divisions</span>
+                            <div class="h-px bg-[#D3EB9F] flex-1"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 max-w-2xl mx-auto">
+                            <!-- External -->
+                            <div class="group relative scroll-reveal" style="--reveal-delay: 1.1s;">
+                                <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                                <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
+                                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                        <img src="{{ asset('assets/img/EXTERNAL_MICHAEL_FATURIN.jpg') }}" alt="External" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">External</p>
+                                    <p class="text-xs text-[#6B7280] font-garet text-center">Michael Faturin</p>
+                                </div>
                             </div>
-                            <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Fundraising</p>
-                            <p class="text-xs text-[#6B7280] font-garet text-center">Anneta Fauzia</p>
+
+                            <!-- Fundraising -->
+                            <div class="group relative scroll-reveal" style="--reveal-delay: 1.2s;">
+                                <div class="absolute -inset-0.5 bg-gradient-to-br from-[#0F4C82]/50 to-[#6F97B6]/50 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                                <div class="relative bg-white/40 rounded-xl p-4 border-2 border-[#0F4C82]/20">
+                                    <div class="w-24 h-24 rounded-xl bg-[#0F4C82]/10 flex items-center justify-center mb-2 mx-auto overflow-hidden">
+                                        <img src="{{ asset('assets/img/FINANCE_ANNETA_FAUZIA.jpg') }}" alt="Fundraising" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-xs uppercase text-[#0F4C82] font-helvetica font-bold text-center mb-1">Fundraising</p>
+                                    <p class="text-xs text-[#6B7280] font-garet text-center">Anneta Fauzia</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
 </section>
-
 <!-- Timeline - 7 EVENTS -->
 <section id="timeline" class="py-20 sm:py-28 bg-gradient-to-b from-[#F8FBFC] to-white scroll-mt-20 relative overflow-hidden">
     <div class="absolute inset-0 opacity-5">
@@ -850,9 +849,6 @@
                 Timeline
             </h2>
             <div class="w-24 h-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] mx-auto mb-8 rounded-full shadow-md"></div>
-            <!-- <p class="text-base sm:text-lg text-[#6B7280] max-w-2xl mx-auto font-garet">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
-            </p> -->
         </div>
 
         <div class="relative max-w-6xl mx-auto">
@@ -872,10 +868,9 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 1</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">7th May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">March 28, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Companies Talks</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Corporate Social Responsibility</h3>
                                 </div>
                             </div>
                         </div>
@@ -886,10 +881,9 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 1</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">7th May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">March 28, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Companies Talks</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Corporate Social Responsibility</h3>
                                 </div>
                             </div>
                         </div>
@@ -901,7 +895,7 @@
                     </div>
                 </div>
 
-                <!-- Phase 2 -->
+                <!-- EVENT 2 -->
                 <div class="relative scroll-reveal" style="--reveal-delay: 0.2s;">
                     <div class="lg:flex lg:items-center lg:flex-row-reverse">
                         <div class="lg:w-1/2 lg:pl-12 hidden lg:block">
@@ -910,10 +904,9 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 2</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">26 - 29th March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">April 6, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Prelimination Stage</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Field Trip</h3>
                                 </div>
                             </div>
                         </div>
@@ -924,10 +917,9 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 2</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">26 - 29th March 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">April 6, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Prelimination Stage</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Field Trip</h3>
                                 </div>
                             </div>
                         </div>
@@ -948,10 +940,9 @@
                                 <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#8CCDCF]/20 hover:border-[#8CCDCF]/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 3</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">28th May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">May 7, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">CSR</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Company Talks</h3>
                                 </div>
                             </div>
                         </div>
@@ -962,10 +953,9 @@
                                 <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#8CCDCF]/20 hover:border-[#8CCDCF]/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#8CCDCF] to-[#D6EBDF] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 3</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">28th May 2026</span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">May 7, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">CSR</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Company Talks</h3>
                                 </div>
                             </div>
                         </div>
@@ -977,33 +967,41 @@
                     </div>
                 </div>
 
-                <!-- EVENT 4 -->
+                <!-- EVENT 4 - Competition Day (Main Event) -->
                 <div class="relative scroll-reveal" style="--reveal-delay: 0.4s;">
                     <div class="lg:flex lg:items-center lg:flex-row-reverse">
                         <div class="lg:w-1/2 lg:pl-12 hidden lg:block">
                             <div class="group relative inline-block w-full max-w-md mr-auto">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#C5E6C9]/20 hover:border-[#C5E6C9]/50 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#C5E6C9] to-[#b0dfdf] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#d4eff4] to-[#c0e5ea] rounded-2xl p-6 shadow-xl border-2 border-white/40 hover:border-white/60 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="px-4 py-2 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 4</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">6th April 2026</span>
+                                        <span class="px-4 py-2 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
+                                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                            </svg>
+                                            Main Event
+                                        </span>
+                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">May 15, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Field Trip</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Day</h3>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="lg:hidden ml-16 flex-1">
                             <div class="group relative inline-block w-full">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#C5E6C9]/20 hover:border-[#C5E6C9]/50 transition-all duration-300">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#C5E6C9] to-[#b0dfdf] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#d4eff4] to-[#c0e5ea] rounded-2xl p-5 shadow-xl border-2 border-white/40 hover:border-white/60 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="px-3 py-1.5 bg-gradient-to-r from-[#C5E6C9] to-[#D3EB9F] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 4</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">6th April 2026</span>
+                                        <span class="px-3 py-1.5 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
+                                            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                            </svg>
+                                            Main Event
+                                        </span>
+                                        <span class="text-[#0F4C82] font-black text-xs font-helvetica">May 15, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Field Trip</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-lg font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Day</h3>
                                 </div>
                             </div>
                         </div>
@@ -1015,119 +1013,133 @@
                     </div>
                 </div>
 
-                <!-- EVENT 5 -->
+                <!-- EVENT 5 - Ignite Talks (Main Event) -->
                 <div class="relative scroll-reveal" style="--reveal-delay: 0.5s;">
                     <div class="lg:flex lg:items-center">
                         <div class="lg:w-1/2 lg:pr-12 lg:text-right hidden lg:block">
                             <div class="group relative inline-block w-full max-w-md ml-auto">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#9AC5C5] to-[#6F97B6] rounded-2xl blur-lg opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#b0d9d9] to-[#86b3c9] rounded-2xl p-6 shadow-xl border-2 border-white/40 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
-                                        <span class="px-4 py-2 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 5</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
+                                        <span class="px-4 py-2 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
+                                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                            </svg>
+                                            Main Event
+                                        </span>
+                                        <span class="text-[#ffffff] font-black text-sm font-helvetica">May 15, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Ignite Talks</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#ffffff] mb-2">Ignite Talks</h3>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="lg:hidden ml-16 flex-1">
                             <div class="group relative inline-block w-full">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#0F4C82]/20 hover:border-[#0F4C82]/50 transition-all duration-300">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#9AC5C5] to-[#6F97B6] rounded-2xl blur-lg opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#b0d9d9] to-[#86b3c9] rounded-2xl p-5 shadow-xl border-2 border-white/40 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="px-3 py-1.5 bg-gradient-to-r from-[#0F4C82] to-[#6F97B6] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 5</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
+                                        <span class="px-3 py-1.5 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
+                                            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                            </svg>
+                                            Main Event
+                                        </span>
+                                        <span class="text-[#ffffff] font-black text-xs font-helvetica">May 15, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Ignite Talks</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-lg font-helvetica font-black tracking-tight text-[#ffffff] mb-2">Ignite Talks</h3>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="absolute left-6 lg:left-1/2 transform lg:-translate-x-1/2 -translate-x-1/2 top-8 w-16 h-16 bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-full border-4 border-white shadow-2xl flex items-center justify-center z-10">
+                        <div class="absolute left-6 lg:left-1/2 transform lg:-translate-x-1/2 -translate-x-1/2 top-8 w-16 h-16 bg-gradient-to-br from-[#9AC5C5] to-[#6F97B6] rounded-full border-4 border-white shadow-2xl flex items-center justify-center z-10">
                             <div class="w-3 h-3 bg-white rounded-full pulse-dot"></div>
                         </div>
                         <div class="hidden lg:block lg:w-1/2 lg:pl-12"></div>
                     </div>
                 </div>
 
-                <!-- EVENT 6 -->
+                <!-- EVENT 6 - Fun Day (Main Event) -->
                 <div class="relative scroll-reveal" style="--reveal-delay: 0.6s;">
                     <div class="lg:flex lg:items-center lg:flex-row-reverse">
                         <div class="lg:w-1/2 lg:pl-12 hidden lg:block">
                             <div class="group relative inline-block w-full max-w-md mr-auto">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-white rounded-2xl p-6 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#6F97B6] to-[#5B7FA3] rounded-2xl blur-lg opacity-35 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#7da3be] to-[#6890ad] rounded-2xl p-6 shadow-xl border-2 border-white/50 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="px-4 py-2 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 6</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
+                                        <span class="px-4 py-2 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
+                                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                            </svg>
+                                            Main Event
+                                        </span>
+                                        <span class="text-[#ffffff] font-black text-sm font-helvetica">May 16, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Grand Final</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#ffffff] mb-2">Fun Day</h3>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="lg:hidden ml-16 flex-1">
                             <div class="group relative inline-block w-full">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-white rounded-2xl p-5 shadow-xl border-2 border-[#6F97B6]/20 hover:border-[#6F97B6]/50 transition-all duration-300">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#6F97B6] to-[#5B7FA3] rounded-2xl blur-lg opacity-35 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#7da3be] to-[#6890ad] rounded-2xl p-5 shadow-xl border-2 border-white/50 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
-                                        <span class="px-3 py-1.5 bg-gradient-to-r from-[#6F97B6] to-[#8CCDCF] text-white text-xs font-black rounded-full font-helvetica shadow-lg">EVENT 6</span>
-                                        <span class="text-[#0F4C82] font-black text-sm font-helvetica">15th May 2026</span>
+                                        <span class="px-3 py-1.5 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
+                                            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                            </svg>
+                                            Main Event
+                                        </span>
+                                        <span class="text-[#ffffff] font-black text-xs font-helvetica">May 16, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-[#0F4C82] mb-2">Competition Grand Final</h3>
-                                    <!-- <p class="text-sm text-[#6B7280] font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-lg font-helvetica font-black tracking-tight text-[#ffffff] mb-2">Fun Day</h3>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="absolute left-6 lg:left-1/2 transform lg:-translate-x-1/2 -translate-x-1/2 top-8 w-16 h-16 bg-gradient-to-br from-[#6F97B6] to-[#8CCDCF] rounded-full border-4 border-white shadow-2xl flex items-center justify-center z-10">
+                        <div class="absolute left-6 lg:left-1/2 transform lg:-translate-x-1/2 -translate-x-1/2 top-8 w-16 h-16 bg-gradient-to-br from-[#6F97B6] to-[#5B7FA3] rounded-full border-4 border-white shadow-2xl flex items-center justify-center z-10">
                             <div class="w-3 h-3 bg-white rounded-full pulse-dot"></div>
                         </div>
                         <div class="hidden lg:block lg:w-1/2 lg:pr-12"></div>
                     </div>
                 </div>
 
-                <!-- EVENT 7 - Grand Final -->
+                <!-- EVENT 7 - Gala Dinner (Main Event) -->
                 <div class="relative scroll-reveal" style="--reveal-delay: 0.7s;">
                     <div class="lg:flex lg:items-center">
                         <div class="lg:w-1/2 lg:pr-12 lg:text-right hidden lg:block">
                             <div class="group relative inline-block w-full max-w-md ml-auto">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#D3EB9F] via-[#8CCDCF] to-[#0F4C82] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-2xl p-6 shadow-xl border-2 border-white/30 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#D3EB9F] via-[#8CCDCF] to-[#0F4C82] rounded-2xl blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#5B7FA3] to-[#4A6B8A] rounded-2xl p-6 shadow-xl border-2 border-white/30 transition-all duration-300 transform group-hover:-translate-y-1">
                                     <div class="flex items-center justify-between mb-3 lg:flex-row-reverse">
                                         <span class="px-4 py-2 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
-                                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
                                                 <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
                                             </svg>
                                             Main Event
                                         </span>
-                                        <span class="text-white font-black text-sm font-helvetica">16th May 2026</span>
+                                        <span class="text-white font-black text-sm font-helvetica">May 16, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-white mb-2">Fun Day and Gala Dinner</h3>
-                                    <!-- <p class="text-sm text-white/80 font-garet">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p> -->
+                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-white mb-2">Gala Dinner</h3>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="lg:hidden ml-16 flex-1">
                             <div class="group relative inline-block w-full">
-                                <div class="absolute -inset-1 bg-gradient-to-r from-[#D3EB9F] via-[#8CCDCF] to-[#0F4C82] rounded-2xl blur-lg opacity-25 group-hover:opacity-75 transition duration-500"></div>
-                                <div class="relative bg-gradient-to-br from-[#0F4C82] to-[#6F97B6] rounded-2xl p-5 shadow-xl border-2 border-white/30 transition-all duration-300">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-[#D3EB9F] via-[#8CCDCF] to-[#0F4C82] rounded-2xl blur-lg opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                                <div class="relative bg-gradient-to-br from-[#5B7FA3] to-[#4A6B8A] rounded-2xl p-5 shadow-xl border-2 border-white/30 transition-all duration-300">
                                     <div class="flex items-center justify-between mb-3">
                                         <span class="px-3 py-1.5 bg-gradient-to-r from-[#D3EB9F] to-[#C5E6C9] text-[#0F4C82] text-xs font-black rounded-full font-helvetica shadow-lg sparkle-badge inline-flex items-center gap-1.5">
-                                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                                            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
                                                 <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
                                             </svg>
                                             Main Event
                                         </span>
-                                        <span class="text-white font-black text-sm font-helvetica">16th May 2026</span>
+                                        <span class="text-white font-black text-xs font-helvetica">May 16, 2026</span>
                                     </div>
-                                    <h3 class="text-xl font-helvetica font-black tracking-tight text-white mb-2">Fun Day and Gala Dinner</h3>
-                                    <!-- <p class="text-sm text-white/80 font-garet">Lorem ipsum dolor sit amet consectetur</p> -->
+                                    <h3 class="text-lg font-helvetica font-black tracking-tight text-white mb-2">Gala Dinner</h3>
                                 </div>
                             </div>
                         </div>
